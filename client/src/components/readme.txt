@@ -1,0 +1,1 @@
+vamos a dividir los componentes de las views? 
