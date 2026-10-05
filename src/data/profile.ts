@@ -6,4 +6,10 @@ export const profile: Profile = {
   email: "alberto.mallar@gmail.com",
   githubUrl: "https://github.com/AlbertoMallar",
   linkedinUrl: "https://www.linkedin.com/in/alberto-mallar-1a5b9a273",
+  image: {
+    src: "/images/profile/alberto-mallar.jpg",
+    alt: { es: "Retrato de Alberto Mallar", en: "Portrait of Alberto Mallar" },
+    width: 949,
+    height: 1280,
+  },
 };

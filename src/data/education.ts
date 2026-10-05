@@ -20,8 +20,8 @@ export const education: readonly Education[] = [
     institution: "Henry",
     year: 2026,
     description: {
-      es: "Formación en RAG, embeddings, agentes con herramientas, LangChain, LangGraph, orquestación multiagente, salidas estructuradas y flujos multimodales de visión y audio.",
-      en: "Training in RAG, embeddings, tool-using agents, LangChain, LangGraph, multi-agent orchestration, structured outputs and multimodal vision and audio workflows.",
+      es: "Programa completado exitosamente con desempeño destacado. Formación en RAG, embeddings, agentes con herramientas, LangChain, LangGraph, orquestación multiagente, salidas estructuradas y flujos multimodales de visión y audio.",
+      en: "Successfully completed with outstanding performance. Training in RAG, embeddings, tool-using agents, LangChain, LangGraph, multi-agent orchestration, structured outputs and multimodal vision and audio workflows.",
     },
   },
   {
@@ -36,6 +36,7 @@ export const education: readonly Education[] = [
   {
     id: "python-programming-course",
     kind: "education",
+    year: 2020,
     title: {
       es: "Curso de Programación en Python",
       en: "Python Programming Course",

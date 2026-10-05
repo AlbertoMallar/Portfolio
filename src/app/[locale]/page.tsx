@@ -3,7 +3,7 @@ import { education } from "@/data/education";
 import { experience } from "@/data/experience";
 import { projects } from "@/data/projects";
 import { profile } from "@/data/profile";
-import { skills } from "@/data/skills";
+import { coreTechnologies, skills } from "@/data/skills";
 import { getDictionary } from "@/lib/dictionaries";
 import { isLocale } from "@/lib/locales";
 import { getCvHref } from "@/lib/assets";
@@ -15,43 +15,54 @@ import { Hero } from "@/sections/Hero";
 import { Projects } from "@/sections/Projects";
 import { Skills } from "@/sections/Skills";
 
-export default async function PortfolioPage({ params }: PageProps<"/[locale]">) {
+export default async function PortfolioPage({
+  params,
+}: PageProps<"/[locale]">) {
   const { locale } = await params;
-
   if (!isLocale(locale)) notFound();
-
   const content = await getDictionary(locale);
-  const emptyMessage = content.common.pendingContent;
-
   return (
-    <main id="main-content" tabIndex={-1} className="mx-auto max-w-4xl px-6 pb-6">
-      <Hero profile={profile} content={content.hero} common={content.common} cvHref={getCvHref(locale)} />
-      <About content={content.sections.about} emptyMessage={emptyMessage} />
-      <Experience
+    <main id="main-content" tabIndex={-1} className="site-container">
+      <Hero
+        profile={profile}
         locale={locale}
-        content={content.sections.experience}
+        content={content.hero}
         common={content.common}
-        items={experience}
+        cvHref={getCvHref(locale)}
       />
       <Projects
         locale={locale}
-        content={content.sections.projects}
-        common={content.common}
-        items={projects}
+        content={content}
+        items={projects.filter(
+          (project) => project.featured && project.context === "professional",
+        )}
+      />
+      <About content={content} />
+      <Experience locale={locale} content={content} items={experience} />
+      <Projects
+        id="ai-work"
+        locale={locale}
+        content={content}
+        items={projects.filter(
+          (project) =>
+            project.featured && project.category === "ai-engineering",
+        )}
       />
       <Skills
         locale={locale}
-        content={content.sections.skills}
-        emptyMessage={emptyMessage}
+        content={content}
+        core={coreTechnologies}
         items={skills}
       />
-      <Education
+      <Education locale={locale} content={content} items={education} />
+      <Projects
+        id="other-projects"
         locale={locale}
-        content={content.sections.education}
-        common={content.common}
-        items={education}
+        content={content}
+        compact
+        items={projects.filter((project) => !project.featured)}
       />
-      <Contact profile={profile} content={content.sections.contact} common={content.common} />
+      <Contact profile={profile} content={content} />
     </main>
   );
 }

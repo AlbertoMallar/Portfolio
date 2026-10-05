@@ -2,9 +2,9 @@ import type { PortfolioContent } from "@/types/portfolio";
 
 const es = {
   metadata: {
-    title: "Desarrollo Full Stack y AI Engineering",
+    title: "Software & AI Engineering",
     description:
-      "Desarrollo web Full Stack, proyectos freelance llevados a producción y AI Engineering aplicada a RAG, agentes e integraciones multimodales.",
+      "Portfolio de Alberto Mallar. Desarrollo Full Stack, proyectos freelance en producción y AI Engineering: RAG, agentes y sistemas multimodales.",
   },
   common: {
     skipToContent: "Saltar al contenido principal",
@@ -17,38 +17,106 @@ const es = {
     presentLabel: "Actualidad",
     hoursLabel: "horas de formación",
     contextLabels: {
-      professional: "Experiencia profesional",
-      academic: "Experiencia académica",
-      personal: "Proyecto personal",
+      professional: "Profesional",
+      academic: "Académico",
+      personal: "Personal",
     },
     links: {
       github: "GitHub",
       linkedin: "LinkedIn",
-      repository: "Ver repositorio",
-      live: "Ver sitio",
+      repository: "Ver código",
+      live: "Visitar sitio",
       credential: "Ver credencial",
     },
   },
+  navigation: {
+    label: "Navegación principal",
+    menu: "Abrir menú",
+    close: "Cerrar menú",
+    projects: "Proyectos",
+    about: "Sobre mí",
+    experience: "Experiencia",
+    contact: "Contacto",
+  },
   hero: {
-    title: "Desarrollador Full Stack + AI Engineering",
+    title: "Software & AI Engineering",
     summary:
-      "Desarrollo aplicaciones y sitios web modernos, desde la implementación hasta la puesta en producción. Complemento el desarrollo Full Stack con AI Engineering: RAG, agentes e integraciones multimodales.",
-    projectsLabel: "Ver proyectos",
+      "Construyo aplicaciones y sitios web modernos, desde la implementación hasta producción. Combino desarrollo Full Stack con RAG, agentes e integraciones multimodales.",
+    projectsLabel: "Explorar proyectos",
     cvLabel: "Descargar CV",
+    cvPending: "CV en español pendiente",
+    domains: ["Full Stack", "AI Engineering", "Idea → producción"],
   },
   sections: {
-    about: {
-      title: "Sobre mí",
-      body: "Trabajo con React, Next.js, TypeScript, Node.js y PostgreSQL para desarrollar interfaces, lógica de aplicación e integrar servicios. En proyectos freelance me encargo de la implementación, las integraciones, el deploy, la configuración de dominios y la puesta en producción. Mi formación y mis proyectos de AI Engineering incluyen embeddings, retrieval y RAG, agentes con herramientas, flujos multiagente, salidas estructuradas e integraciones de visión y audio con APIs de IA. También trabajé en evaluación y entrenamiento de modelos, revisión de código y acompañamiento de estudiantes de desarrollo Full Stack.",
+    projects: {
+      eyebrow: "01 / TRABAJO SELECCIONADO",
+      title: "Software en producción.",
+      body: "Proyectos reales para clientes. Implementación, integraciones y puesta en producción de punta a punta.",
     },
-    experience: { title: "Experiencia" },
-    projects: { title: "Proyectos" },
-    skills: { title: "Habilidades y tecnologías" },
-    education: { title: "Educación y certificaciones" },
+    about: {
+      eyebrow: "02 / SOBRE MÍ",
+      title: "Del problema al producto.",
+      body: "Trabajo con React, Next.js, TypeScript, Node.js y PostgreSQL para desarrollar interfaces, lógica de aplicación e integrar servicios. En proyectos freelance me encargo de la implementación, las integraciones, el deploy, la configuración de dominios y la puesta en producción.\n\nMi formación y mis proyectos de AI Engineering incluyen embeddings, retrieval y RAG, agentes con herramientas, flujos multiagente, salidas estructuradas e integraciones de visión y audio con APIs de IA. También trabajé en evaluación y entrenamiento de modelos, revisión de código y acompañamiento de estudiantes de desarrollo Full Stack.",
+    },
+    experience: {
+      eyebrow: "03 / TRAYECTORIA",
+      title: "Experiencia que conecta disciplinas.",
+    },
+    "ai-work": {
+      eyebrow: "04 / AI ENGINEERING",
+      title: "De la recuperación a los agentes.",
+      body: "Proyectos académicos de Henry: RAG con evidencia, orquestación multiagente y análisis multimodal.",
+    },
+    skills: {
+      eyebrow: "05 / TECNOLOGÍAS",
+      title: "El stack detrás del trabajo.",
+    },
+    education: {
+      eyebrow: "06 / FORMACIÓN",
+      title: "Formación y aprendizaje continuo.",
+    },
+    "other-projects": {
+      eyebrow: "07 / OTROS PROYECTOS",
+      title: "Fundamentos puestos en práctica.",
+      body: "Proyectos académicos y de aprendizaje que complementan el trabajo seleccionado.",
+    },
     contact: {
-      title: "Contacto",
+      eyebrow: "08 / CONTACTO",
+      title: "Construyamos algo útil.",
       body: "Podés contactarme por email o conocer más sobre mi trabajo y trayectoria en GitHub y LinkedIn.",
     },
+  },
+  ui: {
+    production: "En producción",
+    academic: "Proyecto académico",
+    privateRepository: "Repositorio privado",
+    previewPending: "Screenshot pendiente",
+    previewDescription: "Espacio reservado para una captura real del sitio.",
+    schematic: "Esquema conceptual",
+    details: "Más sobre este proyecto",
+    previousExperience: "Experiencia complementaria",
+    coreTechnologies: "Tecnologías principales",
+    additionalTechnologies: "Herramientas y capacidades complementarias",
+    education: "Formación",
+    certification: "Certificación",
+    emailLabel: "Escribime",
+    contactTitle: "¿Tenés un proyecto en mente?",
+    footer: "Software & AI Engineering",
+    backToTop: "Volver al inicio",
+    aboutCapabilities: [
+      {
+        title: "Desarrollar y desplegar",
+        body: "Interfaces, lógica, integraciones y productos web en producción.",
+      },
+      {
+        title: "Integrar inteligencia",
+        body: "RAG, agentes y flujos multimodales con APIs de IA.",
+      },
+      {
+        title: "Revisar y evaluar",
+        body: "Código y respuestas de modelos; experiencia freelance en Outlier.",
+      },
+    ],
   },
 } satisfies PortfolioContent;
 

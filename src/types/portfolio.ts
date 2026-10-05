@@ -10,26 +10,27 @@ export interface Profile {
   email?: string;
   githubUrl?: HttpUrl;
   linkedinUrl?: HttpUrl;
+  image?: PortfolioImage;
 }
 
 export type SectionId =
   | "about"
   | "experience"
   | "projects"
+  | "ai-work"
   | "skills"
   | "education"
+  | "other-projects"
   | "contact";
 
 export interface SectionContent {
   title: string;
+  eyebrow?: string;
   body?: string;
 }
 
 export interface PortfolioContent {
-  metadata: {
-    title: string;
-    description: string;
-  };
+  metadata: { title: string; description: string };
   common: {
     skipToContent: string;
     languageLabel: string;
@@ -46,13 +47,43 @@ export interface PortfolioContent {
       credential: string;
     };
   };
+  navigation: {
+    label: string;
+    menu: string;
+    close: string;
+    projects: string;
+    about: string;
+    experience: string;
+    contact: string;
+  };
   hero: {
     title: string;
     summary: string;
     projectsLabel: string;
     cvLabel: string;
+    cvPending: string;
+    domains: readonly string[];
   };
   sections: Record<SectionId, SectionContent>;
+  ui: {
+    production: string;
+    academic: string;
+    privateRepository: string;
+    previewPending: string;
+    previewDescription: string;
+    schematic: string;
+    details: string;
+    previousExperience: string;
+    coreTechnologies: string;
+    additionalTechnologies: string;
+    education: string;
+    certification: string;
+    emailLabel: string;
+    contactTitle: string;
+    footer: string;
+    backToTop: string;
+    aboutCapabilities: readonly { title: string; body: string }[];
+  };
 }
 
 export interface PortfolioImage {
@@ -63,7 +94,6 @@ export interface PortfolioImage {
 }
 
 export type ProjectCategory = "full-stack" | "ai-engineering" | "other";
-
 export interface Project {
   id: string;
   slug: string;
@@ -73,6 +103,7 @@ export interface Project {
   technologies: readonly string[];
   images?: readonly PortfolioImage[];
   repositoryUrl?: HttpUrl;
+  repositoryVisibility?: "public" | "private";
   liveUrl?: HttpUrl;
   category: ProjectCategory;
   featured?: boolean;
@@ -80,6 +111,11 @@ export interface Project {
   startDate?: string;
   endDate?: string;
   context?: PortfolioContext;
+  preview?: {
+    steps: readonly LocalizedText[];
+    branches?: readonly string[];
+    outputFields?: readonly string[];
+  };
 }
 
 export interface Experience {
@@ -109,7 +145,6 @@ export interface Education {
 }
 
 export type SkillItem = string | { id: string; label: LocalizedText };
-
 export interface SkillGroup {
   id: string;
   title: LocalizedText;

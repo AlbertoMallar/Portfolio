@@ -1,24 +1,41 @@
-import { Section } from "@/components/ui/Section";
 import { ProfileLinks } from "@/components/common/ProfileLinks";
-import type { PortfolioContent, Profile, SectionContent } from "@/types/portfolio";
+import { Icon } from "@/components/ui/Icon";
+import type { PortfolioContent, Profile } from "@/types/portfolio";
 
-type ContactProps = Readonly<{
-  content: SectionContent;
-  common: PortfolioContent["common"];
+export function Contact({
+  profile,
+  content,
+}: {
   profile: Profile;
-}>;
-
-export function Contact({ content, common, profile }: ContactProps) {
+  content: PortfolioContent;
+}) {
   return (
-    <Section id="contact" title={content.title} emptyMessage={common.pendingContent}>
-      <div>
-        {content.body ? <p>{content.body}</p> : null}
-        {profile.location ? <p className="mt-2">{profile.location}</p> : null}
-        {profile.email ? (
-          <p className="mt-2"><a href={`mailto:${profile.email}`} className="underline">{profile.email}</a></p>
-        ) : null}
-        <ProfileLinks profile={profile} labels={common.links} />
+    <section
+      id="contact"
+      className="contact-section"
+      aria-labelledby="contact-title"
+    >
+      <p className="eyebrow">{content.sections.contact.eyebrow}</p>
+      <div className="contact-grid">
+        <div>
+          <h2 id="contact-title">{content.sections.contact.title}</h2>
+          <p>{content.sections.contact.body}</p>
+        </div>
+        <div className="contact-links">
+          {profile.email ? (
+            <a className="email-link" href={`mailto:${profile.email}`}>
+              <span>{content.ui.emailLabel}</span>
+              <strong>{profile.email}</strong>
+              <Icon name="arrow" />
+            </a>
+          ) : null}
+          <ProfileLinks profile={profile} labels={content.common.links} />
+          <p className="contact-location">
+            <Icon name="pin" />
+            {profile.location}
+          </p>
+        </div>
       </div>
-    </Section>
+    </section>
   );
 }

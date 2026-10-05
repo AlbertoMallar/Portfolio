@@ -2,9 +2,9 @@ import type { PortfolioContent } from "@/types/portfolio";
 
 const en = {
   metadata: {
-    title: "Full Stack Development and AI Engineering",
+    title: "Software & AI Engineering",
     description:
-      "Full Stack web development, end-to-end freelance projects and applied AI engineering with RAG, agents and multimodal integrations.",
+      "Alberto Mallar's portfolio. Full Stack development, production freelance projects and AI engineering: RAG, agents and multimodal systems.",
   },
   common: {
     skipToContent: "Skip to main content",
@@ -17,38 +17,106 @@ const en = {
     presentLabel: "Present",
     hoursLabel: "hours of training",
     contextLabels: {
-      professional: "Professional experience",
-      academic: "Academic experience",
-      personal: "Personal project",
+      professional: "Professional",
+      academic: "Academic",
+      personal: "Personal",
     },
     links: {
       github: "GitHub",
       linkedin: "LinkedIn",
-      repository: "View repository",
-      live: "View website",
+      repository: "View code",
+      live: "Visit website",
       credential: "View credential",
     },
   },
+  navigation: {
+    label: "Main navigation",
+    menu: "Open menu",
+    close: "Close menu",
+    projects: "Projects",
+    about: "About",
+    experience: "Experience",
+    contact: "Contact",
+  },
   hero: {
-    title: "Full Stack Developer + AI Engineering",
+    title: "Software & AI Engineering",
     summary:
-      "I build modern web applications and websites, taking them from implementation to production. I combine Full Stack development with applied AI engineering, including RAG, agents and multimodal integrations.",
-    projectsLabel: "View projects",
+      "I build modern web applications and websites, from implementation to production. I combine Full Stack development with RAG, agents and multimodal integrations.",
+    projectsLabel: "Explore projects",
     cvLabel: "Download CV",
+    cvPending: "English CV pending",
+    domains: ["Full Stack", "AI Engineering", "Idea → production"],
   },
   sections: {
+    projects: {
+      eyebrow: "01 / SELECTED WORK",
+      title: "Software in production.",
+      body: "Real projects for clients. End-to-end implementation, integrations and production deployment.",
+    },
     about: {
-      title: "About",
-      body: "I work with React, Next.js, TypeScript, Node.js and PostgreSQL to build interfaces, implement application logic and integrate services. My freelance work covers implementation, service integrations, deployment, domain configuration and production setup. My AI engineering training and projects include embeddings, retrieval and RAG, tool-using agents, multi-agent workflows, structured outputs and vision and audio integrations through AI APIs. I have also worked on model evaluation and training, code review and mentoring Full Stack development students.",
+      eyebrow: "02 / ABOUT",
+      title: "From problem to product.",
+      body: "I work with React, Next.js, TypeScript, Node.js and PostgreSQL to build interfaces, implement application logic and integrate services. My freelance work covers implementation, integrations, deployment, domain configuration and production setup.\n\nMy AI engineering training and projects include embeddings, retrieval and RAG, tool-using agents, multi-agent workflows, structured outputs and vision and audio integrations through AI APIs. I have also worked on model evaluation and training, code review and mentoring Full Stack development students.",
     },
-    experience: { title: "Experience" },
-    projects: { title: "Projects" },
-    skills: { title: "Skills and technologies" },
-    education: { title: "Education and certifications" },
+    experience: {
+      eyebrow: "03 / EXPERIENCE",
+      title: "Experience across disciplines.",
+    },
+    "ai-work": {
+      eyebrow: "04 / AI ENGINEERING",
+      title: "From retrieval to agents.",
+      body: "Henry academic projects: evidence-grounded RAG, multi-agent orchestration and multimodal analysis.",
+    },
+    skills: {
+      eyebrow: "05 / TECHNOLOGIES",
+      title: "The stack behind the work.",
+    },
+    education: {
+      eyebrow: "06 / EDUCATION",
+      title: "Education and continued learning.",
+    },
+    "other-projects": {
+      eyebrow: "07 / MORE PROJECTS",
+      title: "Foundations put into practice.",
+      body: "Academic and learning projects that complement the selected work.",
+    },
     contact: {
-      title: "Contact",
-      body: "You can reach me by email or explore my work and professional background on GitHub and LinkedIn.",
+      eyebrow: "08 / CONTACT",
+      title: "Let's build something useful.",
+      body: "Reach me by email or explore my work and professional background on GitHub and LinkedIn.",
     },
+  },
+  ui: {
+    production: "In production",
+    academic: "Academic project",
+    privateRepository: "Private repository",
+    previewPending: "Screenshot pending",
+    previewDescription: "Reserved for a real screenshot of the website.",
+    schematic: "Conceptual workflow",
+    details: "More about this project",
+    previousExperience: "Additional experience",
+    coreTechnologies: "Core technologies",
+    additionalTechnologies: "Additional tools and capabilities",
+    education: "Education",
+    certification: "Certification",
+    emailLabel: "Email me",
+    contactTitle: "Have a project in mind?",
+    footer: "Software & AI Engineering",
+    backToTop: "Back to top",
+    aboutCapabilities: [
+      {
+        title: "Build and deploy",
+        body: "Interfaces, application logic, integrations and production web products.",
+      },
+      {
+        title: "Integrate intelligence",
+        body: "RAG, agents and multimodal workflows with AI APIs.",
+      },
+      {
+        title: "Review and evaluate",
+        body: "Code and model responses; freelance experience with Outlier.",
+      },
+    ],
   },
 } satisfies PortfolioContent;
 

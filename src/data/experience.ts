@@ -21,8 +21,15 @@ export const experience: readonly Experience[] = [
       },
     ],
     technologies: [
-      "React", "Next.js", "TypeScript", "Node.js", "PostgreSQL",
-      "Tailwind CSS", "Git", "GitHub", "Vercel",
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Node.js",
+      "PostgreSQL",
+      "Tailwind CSS",
+      "Git",
+      "GitHub",
+      "Vercel",
     ],
   },
   {

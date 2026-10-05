@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import { SiteFooter } from "@/components/layout/SiteFooter";
 import { SiteHeader } from "@/components/layout/SiteHeader";
 import { profile } from "@/data/profile";
 import { getDictionary } from "@/lib/dictionaries";
@@ -36,15 +37,13 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale}>
-      <body className="font-sans">
-        <a
-          href="#main-content"
-          className="sr-only focus:not-sr-only focus:block focus:p-4"
-        >
+      <body id="top">
+        <a href="#main-content" className="skip-link">
           {content.common.skipToContent}
         </a>
-        <SiteHeader locale={locale} content={content.common} />
+        <SiteHeader locale={locale} content={content} name={profile.name} />
         {children}
+        <SiteFooter profile={profile} ui={content.ui} />
       </body>
     </html>
   );

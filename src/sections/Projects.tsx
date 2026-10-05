@@ -1,50 +1,41 @@
+import { ProjectCard } from "@/components/projects/ProjectCard";
 import { Section } from "@/components/ui/Section";
-import { Period } from "@/components/common/Period";
 import type { Locale } from "@/lib/locales";
-import type { PortfolioContent, Project, SectionContent } from "@/types/portfolio";
+import type { PortfolioContent, Project, SectionId } from "@/types/portfolio";
 
-type ProjectsProps = Readonly<{
+export function Projects({
+  id = "projects",
+  locale,
+  content,
+  items,
+  compact = false,
+}: {
+  id?: Extract<SectionId, "projects" | "ai-work" | "other-projects">;
   locale: Locale;
-  content: SectionContent;
-  common: PortfolioContent["common"];
+  content: PortfolioContent;
   items: readonly Project[];
-}>;
-
-export function Projects({ locale, content, common, items }: ProjectsProps) {
+  compact?: boolean;
+}) {
   return (
-    <Section id="projects" title={content.title} emptyMessage={common.pendingContent}>
-      {items.length > 0 ? (
-        <ul className="space-y-4">
-          {items.map((project) => (
-            <li key={project.id}>
-              <h3 className="font-semibold">{project.title[locale]}</h3>
-              <Period period={project} locale={locale} presentLabel={common.presentLabel} />
-              {project.context ? <p>{common.contextLabels[project.context]}</p> : null}
-              {project.shortDescription ? (
-                <p>{project.shortDescription[locale]}</p>
-              ) : null}
-              {project.description ? <p className="mt-2">{project.description[locale]}</p> : null}
-              {project.technologies.length > 0 ? (
-                <ul className="mt-2 flex flex-wrap gap-3">
-                  {project.technologies.map((technology) => (
-                    <li key={technology}>{technology}</li>
-                  ))}
-                </ul>
-              ) : null}
-              {project.liveUrl || project.repositoryUrl ? (
-                <ul className="mt-2 flex flex-wrap gap-4">
-                  {project.liveUrl ? (
-                    <li><a href={project.liveUrl} className="underline">{common.links.live}</a></li>
-                  ) : null}
-                  {project.repositoryUrl ? (
-                    <li><a href={project.repositoryUrl} className="underline">{common.links.repository}</a></li>
-                  ) : null}
-                </ul>
-              ) : null}
-            </li>
-          ))}
-        </ul>
-      ) : undefined}
+    <Section
+      id={id}
+      content={content.sections[id]}
+      className={id === "ai-work" ? "ai-section" : ""}
+    >
+      <div
+        className={`project-grid ${id === "ai-work" || compact ? "three-columns" : ""}`}
+      >
+        {items.map((project) => (
+          <ProjectCard
+            key={project.id}
+            project={project}
+            locale={locale}
+            common={content.common}
+            ui={content.ui}
+            compact={compact}
+          />
+        ))}
+      </div>
     </Section>
   );
 }

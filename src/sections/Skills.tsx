@@ -1,33 +1,57 @@
+import { TechnologyIcon } from "@/components/common/TechnologyIcon";
 import { Section } from "@/components/ui/Section";
 import type { Locale } from "@/lib/locales";
-import type { SectionContent, SkillGroup } from "@/types/portfolio";
+import type { PortfolioContent, SkillGroup } from "@/types/portfolio";
 
-type SkillsProps = Readonly<{
+export function Skills({
+  locale,
+  content,
+  core,
+  items,
+}: {
   locale: Locale;
-  content: SectionContent;
-  emptyMessage: string;
+  content: PortfolioContent;
+  core: readonly string[];
   items: readonly SkillGroup[];
-}>;
-
-export function Skills({ locale, content, emptyMessage, items }: SkillsProps) {
+}) {
   return (
-    <Section id="skills" title={content.title} emptyMessage={emptyMessage}>
-      {items.length > 0 ? (
-        <ul className="space-y-4">
-          {items.map((group) => (
-            <li key={group.id}>
-              <h3 className="font-semibold">{group.title[locale]}</h3>
-              <ul className="mt-2 flex flex-wrap gap-3">
-                {group.items.map((skill) => (
-                  <li key={typeof skill === "string" ? skill : skill.id}>
-                    {typeof skill === "string" ? skill : skill.label[locale]}
+    <Section id="skills" content={content.sections.skills}>
+      <h3 className="minor-heading">{content.ui.coreTechnologies}</h3>
+      <ul className="core-technologies">
+        {core.map((name) => (
+          <li key={name}>
+            <TechnologyIcon name={name} />
+            <span>{name}</span>
+          </li>
+        ))}
+      </ul>
+      <h3 className="minor-heading additional-title">
+        {content.ui.additionalTechnologies}
+      </h3>
+      <div className="skill-groups">
+        {items.map((group) => (
+          <div
+            key={group.id}
+            className={group.id === "ai-engineering" ? "wide-skill-group" : ""}
+          >
+            <h4>{group.title[locale]}</h4>
+            <ul>
+              {group.items.map((item) => {
+                const label =
+                  typeof item === "string" ? item : item.label[locale];
+                return (
+                  <li key={typeof item === "string" ? item : item.id}>
+                    <TechnologyIcon
+                      name={typeof item === "string" ? item : item.id}
+                    />
+                    <span>{label}</span>
                   </li>
-                ))}
-              </ul>
-            </li>
-          ))}
-        </ul>
-      ) : undefined}
+                );
+              })}
+            </ul>
+          </div>
+        ))}
+      </div>
     </Section>
   );
 }
