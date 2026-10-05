@@ -2,17 +2,17 @@ import type { Experience } from "@/types/portfolio";
 
 export const experience: readonly Experience[] = [
   {
-    id: "freelance-full-stack",
+    id: "programmer-full-stack",
     role: {
-      es: "Desarrollador Full Stack freelance",
-      en: "Freelance Full Stack Developer",
+      es: "Programador / Desarrollador Full Stack",
+      en: "Programmer / Full Stack Developer",
     },
-    startDate: "2025",
+    startDate: "2022",
     ongoing: true,
     context: "professional",
     description: {
-      es: "Desarrollo de proyectos web para clientes, desde la implementación de interfaces y lógica de aplicación hasta la puesta en producción.",
-      en: "End-to-end web development for clients, from implementing interfaces and application logic to production deployment.",
+      es: "Desarrollo de software y soluciones Full Stack en distintos proyectos, con trabajo directo con clientes desde el análisis de necesidades hasta la implementación y el despliegue.",
+      en: "Software and Full Stack development across a range of projects, working directly with clients from understanding their needs through implementation and deployment.",
     },
     highlights: [
       {
@@ -21,15 +21,14 @@ export const experience: readonly Experience[] = [
       },
     ],
     technologies: [
+      "TypeScript",
+      "JavaScript",
+      "Python",
+      "PHP",
       "React",
       "Next.js",
-      "TypeScript",
       "Node.js",
       "PostgreSQL",
-      "Tailwind CSS",
-      "Git",
-      "GitHub",
-      "Vercel",
     ],
   },
   {
@@ -43,8 +42,8 @@ export const experience: readonly Experience[] = [
     endDate: "2025-04",
     context: "professional",
     description: {
-      es: "Participación en distintos proyectos freelance de evaluación y entrenamiento de sistemas de IA y revisión de código.",
-      en: "Worked across freelance AI evaluation and training projects, including code review and model interactions with tools.",
+      es: "Participación en proyectos freelance de entrenamiento y evaluación de sistemas de IA, incluyendo evaluación de prompts y respuestas, revisión de código y uso de herramientas.",
+      en: "Freelance work on AI training and evaluation projects, including prompt and response evaluation, code review and tool use.",
     },
     highlights: [
       {
@@ -54,6 +53,10 @@ export const experience: readonly Experience[] = [
       {
         es: "Tareas de evaluación y entrenamiento con uso de herramientas e interacciones con herramientas de Google.",
         en: "Evaluated and trained AI systems on tool-use tasks, including interactions with Google tools.",
+      },
+      {
+        es: "Coordinación y revisión de trabajo durante 2024.",
+        en: "Coordinated and reviewed work during 2024.",
       },
     ],
     technologies: ["Python", "JavaScript", "TypeScript"],
@@ -65,12 +68,12 @@ export const experience: readonly Experience[] = [
       en: "Full Stack Teaching Assistant",
     },
     organization: "Henry",
-    startDate: "2023-07",
-    ongoing: true,
+    startDate: "2023",
+    endDate: "2025",
     context: "academic",
     description: {
-      es: "Acompañamiento y coordinación de un grupo de estudiantes del bootcamp, facilitando su integración al equipo de estudio.",
-      en: "Supported and coordinated a group of bootcamp students, helping them integrate into their study team.",
+      es: "Asistencia técnica y coordinación de grupos de estudiantes del bootcamp, con foco en la comunicación, la colaboración y la organización del trabajo.",
+      en: "Provided technical support and coordinated groups of bootcamp students, focusing on communication, collaboration and work organization.",
     },
     highlights: [
       {
@@ -89,12 +92,13 @@ export const experience: readonly Experience[] = [
       es: "Administración de propiedades",
       en: "Property Management",
     },
-    startDate: "2019-10",
+    startDate: "2019",
     ongoing: true,
     context: "professional",
+    secondary: true,
     description: {
-      es: "Administración y mantenimiento de propiedades para uso turístico o familiar.",
-      en: "Property administration and maintenance for tourist and family use.",
+      es: "Administración y mantenimiento de propiedades para uso turístico o familiar, con trato directo con clientes, coordinación de tareas y resolución de problemas.",
+      en: "Property administration and maintenance for tourist and family use, including direct client contact, task coordination and problem-solving.",
     },
     highlights: [
       {
@@ -106,5 +110,37 @@ export const experience: readonly Experience[] = [
         en: "Managed communication between owners and tenants, with a focus on maintaining good relationships and service quality.",
       },
     ],
+  },
+  {
+    id: "lfi-el-alargue",
+    role: {
+      es: "Organización y coordinación de torneos",
+      en: "Tournament Organization and Coordination",
+    },
+    organization: "LFI / El Alargue",
+    startDate: "2015",
+    endDate: "2016",
+    context: "professional",
+    secondary: true,
+    description: {
+      es: "Organización y coordinación general de torneos, contacto con empresas y atención a participantes. Desarrollo y mantenimiento del sitio web, soporte tecnológico y gestión de redes sociales.",
+      en: "Organized and coordinated tournaments, liaised with companies and assisted participants. Developed and maintained the website, provided technology support and managed social media.",
+    },
+  },
+  {
+    id: "blowmax",
+    role: {
+      es: "Atención al cliente",
+      en: "Customer Service",
+    },
+    organization: "BlowMax",
+    startDate: "2017",
+    endDate: "2018",
+    context: "professional",
+    secondary: true,
+    description: {
+      es: "Atención al público, gestión de stock y manejo de caja.",
+      en: "Customer service, stock management and cash handling.",
+    },
   },
 ];

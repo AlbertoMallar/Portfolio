@@ -4,7 +4,7 @@ const es = {
   metadata: {
     title: "Software & AI Engineering",
     description:
-      "Portfolio de Alberto Mallar. Desarrollo Full Stack, proyectos freelance en producción y AI Engineering: RAG, agentes y sistemas multimodales.",
+      "Portfolio de Alberto Mallar. Software & AI Engineering: soluciones tecnológicas, modernización de software e integración de IA para empresas y equipos.",
   },
   common: {
     skipToContent: "Saltar al contenido principal",
@@ -41,7 +41,7 @@ const es = {
   hero: {
     title: "Software & AI Engineering",
     summary:
-      "Construyo aplicaciones y sitios web modernos, desde la implementación hasta producción. Combino desarrollo Full Stack con RAG, agentes e integraciones multimodales.",
+      "Trabajo con empresas y equipos para transformar necesidades reales en soluciones tecnológicas, modernizando software e incorporando IA cuando aporta valor. Combino criterio técnico con comunicación clara, trabajo colaborativo, coordinación de equipos, metodologías ágiles y experiencia directa con clientes, tanto en español como en inglés.",
     projectsLabel: "Explorar proyectos",
     cvLabel: "Descargar CV",
     cvPending: "CV en español pendiente",
@@ -50,8 +50,8 @@ const es = {
   sections: {
     projects: {
       eyebrow: "01 / TRABAJO SELECCIONADO",
-      title: "Software en producción.",
-      body: "Proyectos reales para clientes. Implementación, integraciones y puesta en producción de punta a punta.",
+      title: "Algunos de mis trabajos",
+      body: "Trabajos profesionales desarrollados y finalizados para clientes, desde sus necesidades hasta la solución entregada.",
     },
     about: {
       eyebrow: "02 / SOBRE MÍ",

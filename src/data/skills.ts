@@ -43,6 +43,7 @@ export const skills: readonly SkillGroup[] = [
       "Embeddings",
       "RAG",
       { id: "tool-use", label: { es: "Uso de herramientas", en: "Tool Use" } },
+      { id: "agents", label: { es: "Agentes", en: "Agents" } },
       {
         id: "multi-agent",
         label: { es: "Sistemas multiagente", en: "Multi-Agent Systems" },
@@ -50,8 +51,8 @@ export const skills: readonly SkillGroup[] = [
       {
         id: "multimodal",
         label: {
-          es: "Visión y audio multimodales",
-          en: "Multimodal Vision and Audio",
+          es: "Visión / IA multimodal",
+          en: "Vision / Multimodal AI",
         },
       },
       {

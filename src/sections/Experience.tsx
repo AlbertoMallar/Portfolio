@@ -12,8 +12,8 @@ export function Experience({
   content: PortfolioContent;
   items: readonly Entry[];
 }) {
-  const primary = items.filter((item) => item.id !== "property-management");
-  const additional = items.filter((item) => item.id === "property-management");
+  const primary = items.filter((item) => !item.secondary);
+  const additional = items.filter((item) => item.secondary);
   return (
     <Section id="experience" content={content.sections.experience}>
       <div className="timeline">

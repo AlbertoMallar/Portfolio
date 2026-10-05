@@ -127,6 +127,7 @@ export interface Experience {
   endDate?: string;
   ongoing?: boolean;
   context?: PortfolioContext;
+  secondary?: boolean;
   highlights?: readonly LocalizedText[];
   technologies?: readonly string[];
 }

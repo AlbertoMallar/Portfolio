@@ -12,15 +12,30 @@ La home contiene, en orden:
 2. Hero con posicionamiento, foto, proyectos, CV disponible y enlaces profesionales.
 3. Featured Projects: ICASA y VIANSA.
 4. About.
-5. Experience: freelance, Outlier y Henry; propiedades como experiencia complementaria.
+5. Experience: programación / Full Stack, Outlier y Henry; Property Management, LFI / El Alargue y BlowMax como experiencia complementaria compacta.
 6. Selected AI Work: M2, M3 y M4.
 7. Technologies: siete tecnologías principales y capacidades adicionales por categoría.
-8. Education & Certifications: las seis entradas existentes, priorizando Henry.
+8. Education & Certifications: seis entradas, priorizando Henry e incluyendo la certificación de inglés EF SET C1.
 9. Other Projects: Videogames App, Descuentos Ya y M1.
 10. Contact.
 11. Footer.
 
-PI sigue pendiente de identidad/repositorio y no tiene una ficha pública. Azure no estaba modelada y no se agregó. Medicina y los proyectos académicos existentes se conservaron.
+PI sigue pendiente de identidad/repositorio y no tiene una ficha pública. Azure no está modelada y no se presenta como tecnología dominada. Los proyectos académicos existentes se conservan.
+
+## Correcciones de contenido de la V1
+
+La segunda revisión de contenido aplica las correcciones explícitas del autor del 2026-10-05. Tienen prioridad sobre el CV y las fichas internas anteriores; no deben revertirse usando esas fuentes históricas:
+
+- Programador / Full Stack Developer: 2022–Actualidad, con alcance más amplio que el trabajo freelance iniciado en 2025.
+- Henry Teaching Assistant: 2023–2025, experiencia finalizada.
+- Outlier: diciembre de 2023–abril de 2025; incluye evaluación de prompts y respuestas, tool use y coordinación y revisión de trabajo durante 2024.
+- Property Management: 2019–Actualidad; LFI / El Alargue: 2015–2016; BlowMax: 2017–2018. Las tres entradas usan `Experience.secondary` para conservar la jerarquía tecnológica y el formato compacto existente.
+- Curso de Python: 2022. La referencia interna a Sensus3D's Software Engineer se conserva en `references/professional-info/`; no se infiere que sea una institución emisora.
+- Ingeniería en Computación: cuatro años cursados, carrera no finalizada; no se presenta un título obtenido.
+- Medicina queda excluida del contenido del sitio. Su lugar en formación lo ocupa EF SET, certificación de inglés C1. No se infieren fecha de expedición, puntuación ni enlace desde notas pendientes de validación.
+- Technologies mantiene las siete tecnologías principales, agrega Agents y explicita Vision / Multimodal AI. Redux y FAISS permanecen como capacidades previamente documentadas.
+
+Hero, metadatos y el encabezado «Algunos de mis trabajos» / «Some of my work» se actualizan en ambos idiomas. Los datos de M2/M3/M4, el diseño, los assets y el contenido original del CV descargable permanecen intactos.
 
 ## Separación de responsabilidades
 

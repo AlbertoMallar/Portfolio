@@ -36,7 +36,7 @@ export const education: readonly Education[] = [
   {
     id: "python-programming-course",
     kind: "education",
-    year: 2020,
+    year: 2022,
     title: {
       es: "Curso de Programación en Python",
       en: "Python Programming Course",
@@ -53,20 +53,14 @@ export const education: readonly Education[] = [
     startDate: "2010",
     endDate: "2013",
     description: {
-      es: "Tres años de estudios cursados.",
-      en: "Completed three years of study.",
+      es: "Cuatro años cursados; carrera no finalizada.",
+      en: "Four years of study; degree not completed.",
     },
   },
   {
-    id: "medicine-studies",
-    kind: "education",
-    title: { es: "Estudios de Medicina", en: "Medicine Studies" },
-    institution: "Universidad de Mendoza",
-    startDate: "2017",
-    endDate: "2021",
-    description: {
-      es: "Estudios hasta cuarto año.",
-      en: "Studies up to the fourth year.",
-    },
+    id: "ef-set-english",
+    kind: "certification",
+    title: { es: "Certificado de inglés — C1", en: "English Certificate — C1" },
+    institution: "EF SET",
   },
 ];
