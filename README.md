@@ -58,11 +58,11 @@ Se actualizó el contenido público con hechos ya documentados de M1–M4 y educ
 ## Assets de esta V1
 
 - Fotografía: copia intacta de `references/my-images/foto2.jpg` en `public/images/profile/alberto-mallar.jpg` (137 KB). Next Image sirve variantes optimizadas con tamaños responsive.
-- CV inglés: copia del PDF público existente en `public/cv/alberto-mallar-cv-en.pdf`.
-- CV español: pendiente. Agregar `public/cv/alberto-mallar-cv-es.pdf` y habilitar `es` en `availableCvLocales`, en `src/lib/assets.ts`.
+- CV inglés: `public/cv/Alberto_Mallar_CV_EN_2026.pdf`, disponible para descargar desde `/en`.
+- CV español: `public/cv/Alberto_Mallar_CV_ES_2026.pdf`, disponible para descargar desde `/es`.
 - Logos: 19 SVG locales de Simple Icons; fuente y licencia en [public/icons/technologies/README.md](public/icons/technologies/README.md).
 - Iconos de interfaz: SVG en `Icon.tsx`. Las tecnologías sin logo disponible tienen un símbolo genérico acompañado por su nombre.
-- Capturas de sitios y proyectos: todavía pendientes. Los placeholders están rotulados explícitamente.
+- Capturas de ICASA y VIANSA: copias intactas de `references/project-screenshots/icasa/icasa-home.png` y `references/project-screenshots/viansa/viansa-home.jpeg` en `public/images/projects/`. Reemplazan los placeholders en ambos idiomas; Next Image optimiza su entrega y se muestran completas, sin recortar logos o navegación. Las capturas de los demás proyectos siguen pendientes.
 
 Los originales de las fotografías se conservan. No se copian los certificados ni documentos internos a public automáticamente.
 
@@ -114,6 +114,6 @@ Verificar idiomas, menú móvil, enlaces, descargas disponibles, tamaños de pan
 
 ## Próxima revisión
 
-Revisar esta V1 visual, completar screenshots y CV español, seleccionar posibles imágenes de certificados y ajustar composición o dirección visual. Los datos permanecen separados de la presentación para permitir un rediseño.
+Revisar esta V1 visual, completar screenshots, seleccionar posibles imágenes de certificados y ajustar composición o dirección visual. Los datos permanecen separados de la presentación para permitir un rediseño.
 
 Dominio de publicación, canonical, Open Graph definitivo, sitemap y despliegue quedan para una etapa posterior autorizada.

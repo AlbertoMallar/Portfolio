@@ -5,6 +5,17 @@ export const projects: readonly Project[] = [
     id: "icasa",
     slug: "icasa",
     title: { es: "ICASA", en: "ICASA" },
+    images: [
+      {
+        src: "/images/projects/icasa-home.png",
+        alt: {
+          es: "Captura de la página de inicio de ICASA, con navegación y una imagen industrial en el Hero.",
+          en: "Screenshot of ICASA's homepage, with navigation and an industrial hero image.",
+        },
+        width: 1895,
+        height: 906,
+      },
+    ],
     shortDescription: {
       es: "Sitio corporativo freelance desarrollado y llevado a producción de punta a punta.",
       en: "An end-to-end freelance corporate website project, developed and deployed to production.",
@@ -34,6 +45,17 @@ export const projects: readonly Project[] = [
     id: "viansa",
     slug: "viansa",
     title: { es: "VIANSA", en: "VIANSA" },
+    images: [
+      {
+        src: "/images/projects/viansa-home.jpeg",
+        alt: {
+          es: "Captura de la página de inicio de VIANSA, con navegación bilingüe y una vista del cultivo.",
+          en: "Screenshot of VIANSA's homepage, with bilingual navigation and a view of the crop fields.",
+        },
+        width: 1600,
+        height: 748,
+      },
+    ],
     shortDescription: {
       es: "Sitio corporativo bilingüe desarrollado y desplegado en producción.",
       en: "A bilingual corporate website developed and deployed to production.",

@@ -1,12 +1,12 @@
 import type { Locale } from "@/lib/locales";
 
 export const cvFiles = {
-  es: "/cv/alberto-mallar-cv-es.pdf",
-  en: "/cv/alberto-mallar-cv-en.pdf",
+  es: "/cv/Alberto_Mallar_CV_ES_2026.pdf",
+  en: "/cv/Alberto_Mallar_CV_EN_2026.pdf",
 } satisfies Record<Locale, `/cv/${string}.pdf`>;
 
-// La versión inglesa pública está disponible. Habilitar español al agregar su PDF.
-export const availableCvLocales: readonly Locale[] = ["en"];
+// Ambas versiones están disponibles en public/cv.
+export const availableCvLocales: readonly Locale[] = ["es", "en"];
 
 export function getCvHref(locale: Locale): string | undefined {
   return availableCvLocales.includes(locale) ? cvFiles[locale] : undefined;

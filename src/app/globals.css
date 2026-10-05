@@ -494,7 +494,7 @@ h2 {
   aspect-ratio: 16 / 10;
 }
 .real-preview img {
-  object-fit: cover;
+  object-fit: contain;
 }
 .site-placeholder {
   aspect-ratio: 16 / 10;
