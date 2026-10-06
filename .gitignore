@@ -20,5 +20,5 @@ pnpm-debug.log*
 Thumbs.db
 Desktop.ini
 
-# Internal professional documentation
-references/professional-info/
+# Local references and internal professional documentation
+/references/

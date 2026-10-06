@@ -49,7 +49,7 @@ Hero, metadatos y el encabezado «Algunos de mis trabajos» / «Some of my work�
 | `src/app/globals.css`        | Tokens, layout, breakpoints, superficies y motion de la propuesta visual.                                                          |
 | `src/lib/`                   | Idiomas, diccionarios, fechas y disponibilidad de CV.                                                                              |
 | `public/`                    | Assets seleccionados para publicar.                                                                                                |
-| `references/`                | Material original y documentación interna; no se sirve ni importa automáticamente.                                                 |
+| `references/`                | Material original y documentación interna local, excluida de Git; no se sirve ni importa automáticamente.                          |
 
 `Project.images` permite incorporar capturas reales sin cambiar las cards. `Project.preview` describe esquemas conceptuales para los proyectos de IA; no son screenshots, trazas ni resultados de ejecución.
 
