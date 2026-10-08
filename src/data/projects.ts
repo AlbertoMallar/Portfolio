@@ -4,13 +4,14 @@ export const projects: readonly Project[] = [
   {
     id: "icasa",
     slug: "icasa",
-    title: { es: "ICASA", en: "ICASA" },
+    title: { es: "ICASA", en: "ICASA", de: "ICASA" },
     images: [
       {
         src: "/images/projects/icasa-home.png",
         alt: {
           es: "Captura de la página de inicio de ICASA, con navegación y una imagen industrial en el Hero.",
           en: "Screenshot of ICASA's homepage, with navigation and an industrial hero image.",
+          de: "Screenshot der ICASA-Startseite mit Navigation und einem industriellen Titelbild.",
         },
         width: 1895,
         height: 906,
@@ -19,10 +20,12 @@ export const projects: readonly Project[] = [
     shortDescription: {
       es: "Sitio corporativo freelance desarrollado y llevado a producción de punta a punta.",
       en: "An end-to-end freelance corporate website project, developed and deployed to production.",
+      de: "Freiberufliches Projekt einer Unternehmenswebsite, von der Entwicklung bis zur Inbetriebnahme vollständig umgesetzt.",
     },
     description: {
       es: "Implementación de una interfaz responsive, galería de proyectos, geolocalización y flujos de contacto con integración de email mediante Resend. El trabajo incluyó configuración de dominio y DNS, deployment en Vercel y puesta en producción.",
       en: "Built a responsive interface, project gallery, geolocation and contact flows with email integration through Resend. The work included domain and DNS configuration, Vercel deployment and production setup.",
+      de: "Entwicklung einer responsiven Benutzeroberfläche, Projektgalerie, Geolokalisierung und Kontaktfunktionen mit E-Mail-Integration über Resend. Die Arbeit umfasste Domain- und DNS-Konfiguration, Deployment auf Vercel und Inbetriebnahme.",
     },
     technologies: [
       "Next.js",
@@ -44,13 +47,14 @@ export const projects: readonly Project[] = [
   {
     id: "viansa",
     slug: "viansa",
-    title: { es: "VIANSA", en: "VIANSA" },
+    title: { es: "VIANSA", en: "VIANSA", de: "VIANSA" },
     images: [
       {
         src: "/images/projects/viansa-home.jpeg",
         alt: {
           es: "Captura de la página de inicio de VIANSA, con navegación bilingüe y una vista del cultivo.",
           en: "Screenshot of VIANSA's homepage, with bilingual navigation and a view of the crop fields.",
+          de: "Screenshot der VIANSA-Startseite mit zweisprachiger Navigation und einem Blick auf die Anbauflächen.",
         },
         width: 1600,
         height: 748,
@@ -59,10 +63,12 @@ export const projects: readonly Project[] = [
     shortDescription: {
       es: "Sitio corporativo bilingüe desarrollado y desplegado en producción.",
       en: "A bilingual corporate website developed and deployed to production.",
+      de: "Entwicklung und Inbetriebnahme einer zweisprachigen Unternehmenswebsite.",
     },
     description: {
       es: "Desarrollo de layouts responsive, implementación de la identidad visual de la marca y optimización del contenido multimedia. El proyecto incluyó deployment y configuración del dominio de producción.",
       en: "Developed responsive layouts, implemented the brand's visual identity and optimized media content. The project included deployment and production domain configuration.",
+      de: "Entwicklung responsiver Layouts, Umsetzung der visuellen Markenidentität und Optimierung von Multimedia-Inhalten. Das Projekt umfasste Deployment und Konfiguration der Domain für den Produktivbetrieb.",
     },
     technologies: [
       "Next.js",
@@ -82,14 +88,20 @@ export const projects: readonly Project[] = [
   {
     id: "videogames-app",
     slug: "videogames-app",
-    title: { es: "Aplicación de videojuegos", en: "Videogames App" },
+    title: {
+      es: "Aplicación de videojuegos",
+      en: "Videogames App",
+      de: "Videospiel-App",
+    },
     shortDescription: {
       es: "Aplicación académica para consultar, buscar y filtrar videojuegos, e incorporar nuevos títulos.",
       en: "An academic application for browsing, searching and filtering video games, with support for adding new titles.",
+      de: "Ausbildungsprojekt einer Anwendung zum Erkunden, Suchen und Filtern von Videospielen sowie zum Hinzufügen neuer Titel.",
     },
     description: {
       es: "Proyecto del bootcamp de Henry que consume información de una API externa y permite registrar videojuegos con sus plataformas y géneros en una base de datos. Desarrollado con React y Redux en el frontend, Node.js y Express en el backend, y PostgreSQL con Sequelize.",
       en: "A Henry bootcamp project that retrieves game information from an external API and lets users add games with their platforms and genres to a database. Built with React and Redux, a Node.js and Express backend, and PostgreSQL with Sequelize.",
+      de: "Projekt aus dem Henry-Bootcamp, das Spielinformationen über eine externe API abruft und das Speichern von Videospielen mit ihren Plattformen und Genres in einer Datenbank ermöglicht. Entwickelt mit React und Redux im Frontend, Node.js und Express im Backend sowie PostgreSQL mit Sequelize.",
     },
     technologies: [
       "React",
@@ -108,14 +120,16 @@ export const projects: readonly Project[] = [
   {
     id: "descuentos-ya",
     slug: "descuentos-ya",
-    title: { es: "Descuentos Ya", en: "Descuentos Ya" },
+    title: { es: "Descuentos Ya", en: "Descuentos Ya", de: "Descuentos Ya" },
     shortDescription: {
       es: "Plataforma desarrollada en equipo para conectar comercios y socios de clubes con descuentos exclusivos.",
       en: "A team-built platform connecting businesses and club members through exclusive discounts.",
+      de: "Im Team entwickelte Plattform, die Geschäfte und Vereinsmitglieder durch exklusive Rabatte verbindet.",
     },
     description: {
       es: "Proyecto académico realizado con un equipo de estudiantes de Henry. La plataforma facilita el acceso a descuentos exclusivos y contempla una versión móvil con React Native.",
       en: "An academic project developed with a team of Henry students. The platform gives club members access to exclusive discounts and includes a mobile version built with React Native.",
+      de: "Ausbildungsprojekt, das mit einem Team von Henry-Studierenden entwickelt wurde. Die Plattform ermöglicht Vereinsmitgliedern den Zugang zu exklusiven Rabatten und umfasst eine mobile Version mit React Native.",
     },
     technologies: [
       "Next.js",
@@ -136,14 +150,17 @@ export const projects: readonly Project[] = [
     title: {
       es: "PeopleFlow FAQ RAG",
       en: "PeopleFlow FAQ RAG",
+      de: "PeopleFlow FAQ RAG",
     },
     shortDescription: {
       es: "Respuestas de Recursos Humanos basadas en evidencia recuperada, con trazabilidad a sus fuentes.",
       en: "HR answers grounded in retrieved evidence, with traceability to source documents.",
+      de: "Antworten auf Personalfragen auf Basis abgerufener Belege, mit nachvollziehbaren Verweisen auf die Quelldokumente.",
     },
     description: {
       es: "Proyecto integrador M2 de Henry sobre una knowledge base ficticia de PeopleFlow. Implementa ingesta, chunking semántico y por tokens, embeddings, persistencia en Chroma y retrieval Top-K. La respuesta estructurada incluye user_question, system_answer y chunks_related. Incluye evaluación de retrieval y tests.",
       en: "Henry M2 project built around a fictional PeopleFlow knowledge base. Implements ingestion, semantic and token-aware chunking, embeddings, persistent Chroma storage and Top-K retrieval. Structured responses contain user_question, system_answer and chunks_related. Includes retrieval evaluation and tests.",
+      de: "Abschlussprojekt des Henry-Moduls M2 mit einer fiktiven PeopleFlow-Wissensbasis. Implementiert Datenimport, semantisches und tokenbasiertes Chunking, Embeddings, persistente Speicherung in Chroma und Top-K-Retrieval. Die strukturierten Antworten enthalten user_question, system_answer und chunks_related. Mit Retrieval-Evaluation und Tests.",
     },
     technologies: ["Python", "OpenAI", "Chroma", "RAG"],
     repositoryUrl: "https://github.com/AlbertoMallar/m2-faq-rag",
@@ -156,14 +173,17 @@ export const projects: readonly Project[] = [
         {
           es: "Consulta",
           en: "Query",
+          de: "Anfrage",
         },
         {
           es: "Retrieval",
           en: "Retrieval",
+          de: "Retrieval",
         },
         {
           es: "Respuesta",
           en: "Answer",
+          de: "Antwort",
         },
       ],
       outputFields: ["user_question", "system_answer", "chunks_related"],
@@ -175,14 +195,17 @@ export const projects: readonly Project[] = [
     title: {
       es: "Multi-Agent Support System",
       en: "Multi-Agent Support System",
+      de: "Multi-Agenten-Supportsystem",
     },
     shortDescription: {
       es: "Un orquestador dirige cada consulta a un especialista con su propia base de conocimiento.",
       en: "An orchestrator routes each query to a specialist with its own knowledge base.",
+      de: "Ein Orchestrator leitet jede Anfrage an einen Spezialisten mit eigener Wissensbasis weiter.",
     },
     description: {
       es: "Proyecto integrador M3 de Henry para el soporte de una empresa SaaS ficticia. LangGraph gestiona estado tipado y routing condicional hacia HR, Tech, Finance u out_of_scope. Cada especialista usa RAG con Chroma. Incluye CLI, evaluator opcional, tests y observabilidad con Langfuse.",
       en: "Henry M3 project for support at a fictional SaaS company. LangGraph manages typed state and conditional routing to HR, Tech, Finance or out_of_scope. Each specialist uses RAG with Chroma. Includes a CLI, optional evaluator, tests and Langfuse observability.",
+      de: "Abschlussprojekt des Henry-Moduls M3 für den Support eines fiktiven SaaS-Unternehmens. LangGraph verwaltet typisierten Zustand und bedingtes Routing zu HR, Tech, Finance oder out_of_scope. Jeder Spezialist nutzt RAG mit Chroma. Mit CLI, optionalem Evaluator, Tests und Observability über Langfuse.",
     },
     technologies: ["Python", "LangGraph", "LangChain", "Chroma", "Langfuse"],
     repositoryUrl: "https://github.com/AlbertoMallar/m3-agents",
@@ -195,14 +218,17 @@ export const projects: readonly Project[] = [
         {
           es: "Consulta",
           en: "Query",
+          de: "Anfrage",
         },
         {
           es: "Orquestador",
           en: "Orchestrator",
+          de: "Orchestrator",
         },
         {
           es: "Especialista",
           en: "Specialist",
+          de: "Spezialist",
         },
       ],
       branches: ["HR", "Tech", "Finance", "out_of_scope"],
@@ -214,14 +240,17 @@ export const projects: readonly Project[] = [
     title: {
       es: "Autonomous Contract Comparison Agent",
       en: "Autonomous Contract Comparison Agent",
+      de: "Autonomer Agent für Vertragsvergleiche",
     },
     shortDescription: {
       es: "Visión y agentes para comparar un contrato y su adenda, con cambios en una salida estructurada.",
       en: "Vision and agents compare a contract and its amendment, returning changes as structured output.",
+      de: "Bildverarbeitung und Agenten vergleichen einen Vertrag mit seinem Nachtrag und geben Änderungen strukturiert aus.",
     },
     description: {
       es: "Proyecto integrador M4 de Henry. GPT-4o transcribe una imagen de cada documento; un agente contextualiza los textos y otro extrae modificaciones, eliminaciones y adiciones. La orquestación es secuencial con LangChain. Pydantic valida ContractChangeOutput y Langfuse registra las etapas. Incluye escenarios de referencia para comparación manual.",
       en: "Henry M4 project. GPT-4o transcribes one image per document; one agent contextualizes the texts and another extracts modifications, removals and additions. Orchestration uses sequential LangChain calls. Pydantic validates ContractChangeOutput and Langfuse traces the stages. Includes reference scenarios for manual comparison.",
+      de: "Abschlussprojekt des Henry-Moduls M4. GPT-4o transkribiert ein Bild je Dokument; ein Agent ordnet die Texte in ihren Kontext ein, ein weiterer extrahiert Änderungen, Löschungen und Ergänzungen. Die Orchestrierung erfolgt über sequenzielle LangChain-Aufrufe. Pydantic validiert ContractChangeOutput, und Langfuse zeichnet die einzelnen Schritte auf. Mit Referenzszenarien für den manuellen Vergleich.",
     },
     technologies: [
       "Python",
@@ -240,14 +269,17 @@ export const projects: readonly Project[] = [
         {
           es: "Imágenes",
           en: "Images",
+          de: "Bilder",
         },
         {
           es: "Agentes",
           en: "Agents",
+          de: "Agenten",
         },
         {
           es: "Cambios",
           en: "Changes",
+          de: "Änderungen",
         },
       ],
       outputFields: [
@@ -263,14 +295,17 @@ export const projects: readonly Project[] = [
     title: {
       es: "AI Support Assistant",
       en: "AI Support Assistant",
+      de: "KI-Supportassistent",
     },
     shortDescription: {
       es: "CLI de soporte con respuestas JSON, validación, métricas de uso y persistencia CSV.",
       en: "A support CLI with JSON responses, validation, usage metrics and CSV persistence.",
+      de: "Support-CLI mit JSON-Antworten, Validierung, Nutzungsmetriken und CSV-Speicherung.",
     },
     description: {
       es: "Proyecto integrador M1 de Henry. Python y OpenAI generan respuestas con answer, confidence y actions. Incluye variantes zero-shot y few-shot, tests con pytest y una guardia heurística local para entrada, redacción de datos detectables y fallback de salida.",
       en: "Henry M1 project. Python and OpenAI generate responses containing answer, confidence and actions. Includes zero-shot and few-shot variants, pytest tests and a local heuristic guard for input, detectable sensitive-data redaction and output fallback.",
+      de: "Abschlussprojekt des Henry-Moduls M1. Python und OpenAI erzeugen Antworten mit answer, confidence und actions. Mit Zero-Shot- und Few-Shot-Varianten, pytest-Tests und einer lokalen heuristischen Schutzschicht für Eingaben, die Maskierung erkennbarer sensibler Daten und eine Ersatzausgabe.",
     },
     technologies: ["Python", "OpenAI", "pytest"],
     repositoryUrl:

@@ -14,26 +14,29 @@ export const coreTechnologies = [
 export const skills: readonly SkillGroup[] = [
   {
     id: "frontend",
-    title: { es: "Frontend", en: "Frontend" },
+    title: { es: "Frontend", en: "Frontend", de: "Frontend" },
     items: ["Tailwind CSS", "HTML", "CSS", "Redux"],
   },
   {
     id: "backend",
-    title: { es: "Backend", en: "Backend" },
+    title: { es: "Backend", en: "Backend", de: "Backend" },
     items: [
       "Express",
       "PHP",
-      { id: "rest-apis", label: { es: "APIs REST", en: "REST APIs" } },
+      {
+        id: "rest-apis",
+        label: { es: "APIs REST", en: "REST APIs", de: "REST-APIs" },
+      },
     ],
   },
   {
     id: "databases",
-    title: { es: "Datos", en: "Data" },
+    title: { es: "Datos", en: "Data", de: "Daten" },
     items: ["Prisma", "Sequelize", "FAISS"],
   },
   {
     id: "ai-engineering",
-    title: { es: "AI Engineering", en: "AI Engineering" },
+    title: { es: "AI Engineering", en: "AI Engineering", de: "AI Engineering" },
     items: [
       "OpenAI APIs",
       "LangChain",
@@ -42,28 +45,48 @@ export const skills: readonly SkillGroup[] = [
       "Pydantic",
       "Embeddings",
       "RAG",
-      { id: "tool-use", label: { es: "Uso de herramientas", en: "Tool Use" } },
-      { id: "agents", label: { es: "Agentes", en: "Agents" } },
+      {
+        id: "tool-use",
+        label: {
+          es: "Uso de herramientas",
+          en: "Tool Use",
+          de: "Werkzeugnutzung",
+        },
+      },
+      { id: "agents", label: { es: "Agentes", en: "Agents", de: "Agenten" } },
       {
         id: "multi-agent",
-        label: { es: "Sistemas multiagente", en: "Multi-Agent Systems" },
+        label: {
+          es: "Sistemas multiagente",
+          en: "Multi-Agent Systems",
+          de: "Multi-Agenten-Systeme",
+        },
       },
       {
         id: "multimodal",
         label: {
           es: "Visión / IA multimodal",
           en: "Vision / Multimodal AI",
+          de: "Bildverarbeitung / Multimodale KI",
         },
       },
       {
         id: "structured-outputs",
-        label: { es: "Salidas estructuradas", en: "Structured Outputs" },
+        label: {
+          es: "Salidas estructuradas",
+          en: "Structured Outputs",
+          de: "Strukturierte Ausgaben",
+        },
       },
     ],
   },
   {
     id: "development-deployment",
-    title: { es: "Desarrollo y deployment", en: "Development and Deployment" },
+    title: {
+      es: "Desarrollo y deployment",
+      en: "Development and Deployment",
+      de: "Entwicklung und Deployment",
+    },
     items: ["Docker", "Git", "GitHub", "Vercel", "WSL"],
   },
 ];

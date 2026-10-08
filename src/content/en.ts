@@ -12,6 +12,7 @@ const en = {
     languageNames: {
       es: "Español",
       en: "English",
+      de: "Deutsch",
     },
     pendingContent: "Content to be defined.",
     presentLabel: "Present",

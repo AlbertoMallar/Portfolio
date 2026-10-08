@@ -4,7 +4,7 @@ Portfolio profesional de Software & AI Engineering, construido incrementalmente 
 
 ## Estado: V1 visual
 
-Primera propuesta visual, abierta a revisión: base oscura, contraste alto, acentos verde agua, fotografía rectangular, líneas técnicas discretas y transiciones CSS. Las rutas `/es` y `/en` comparten componentes; `/` redirige a `/es`.
+Primera propuesta visual, abierta a revisión: base oscura, contraste alto, acentos verde agua, fotografía rectangular, líneas técnicas discretas y transiciones CSS. Las rutas `/es`, `/en` y `/de` comparten componentes; `/` redirige a `/es`.
 
 La home contiene, en orden:
 
@@ -42,7 +42,7 @@ Hero, metadatos y el encabezado «Algunos de mis trabajos» / «Some of my work�
 | Ubicación                    | Responsabilidad                                                                                                                    |
 | ---------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
 | `src/data/`                  | Perfil, proyectos, experiencia, educación y tecnologías. URLs, IDs y fechas compartidos; textos traducibles con LocalizedText.     |
-| `src/content/es.ts`, `en.ts` | Textos de interfaz, encabezados, navegación y metadatos; ambos satisfacen PortfolioContent.                                        |
+| `src/content/es.ts`, `en.ts`, `de.ts` | Textos de interfaz, encabezados, navegación y metadatos; todos satisfacen PortfolioContent.                               |
 | `src/types/portfolio.ts`     | Contratos de dominio y diccionarios.                                                                                               |
 | `src/sections/`              | Composición de los bloques.                                                                                                        |
 | `src/components/`            | ProjectCard/ProjectPreview, TechnologyIcon, ExperienceItem, CertificationCard, SectionHeading, Icon, enlaces, navegación y footer. |
@@ -60,15 +60,16 @@ Se actualizó el contenido público con hechos ya documentados de M1–M4 y educ
 - Fotografía: copia intacta de `references/my-images/foto2.jpg` en `public/images/profile/alberto-mallar.jpg` (137 KB). Next Image sirve variantes optimizadas con tamaños responsive.
 - CV inglés: `public/cv/Alberto_Mallar_CV_EN_2026.pdf`, disponible para descargar desde `/en`.
 - CV español: `public/cv/Alberto_Mallar_CV_ES_2026.pdf`, disponible para descargar desde `/es`.
+- CV alemán: pendiente; `/de` muestra el estado correspondiente sin enlazar un archivo inexistente.
 - Logos: 19 SVG locales de Simple Icons; fuente y licencia en [public/icons/technologies/README.md](public/icons/technologies/README.md).
 - Iconos de interfaz: SVG en `Icon.tsx`. Las tecnologías sin logo disponible tienen un símbolo genérico acompañado por su nombre.
-- Capturas de ICASA y VIANSA: copias intactas de `references/project-screenshots/icasa/icasa-home.png` y `references/project-screenshots/viansa/viansa-home.jpeg` en `public/images/projects/`. Reemplazan los placeholders en ambos idiomas; Next Image optimiza su entrega y se muestran completas, sin recortar logos o navegación. Las capturas de los demás proyectos siguen pendientes.
+- Capturas de ICASA y VIANSA: copias intactas de `references/project-screenshots/icasa/icasa-home.png` y `references/project-screenshots/viansa/viansa-home.jpeg` en `public/images/projects/`. Reemplazan los placeholders en los tres idiomas; Next Image optimiza su entrega y se muestran completas, sin recortar logos o navegación. Las capturas de los demás proyectos siguen pendientes.
 
 Los originales de las fotografías se conservan. No se copian los certificados ni documentos internos a public automáticamente.
 
 ## Screenshots a preparar
 
-Guardar primero los originales en `references/project-screenshots/`. Para publicar, seleccionar copias optimizadas en `public/images/projects/` y completar `Project.images` con ruta, alt en ambos idiomas y dimensiones.
+Guardar primero los originales en `references/project-screenshots/`. Para publicar, seleccionar copias optimizadas en `public/images/projects/` y completar `Project.images` con ruta, alt en los tres idiomas y dimensiones.
 
 | Proyecto | Capturas recomendadas                                                                                                              |
 | -------- | ---------------------------------------------------------------------------------------------------------------------------------- |
@@ -101,7 +102,7 @@ npm ci
 npm run dev
 ```
 
-Abrir [español](http://localhost:3000/es) o [inglés](http://localhost:3000/en).
+Abrir [español](http://localhost:3000/es), [inglés](http://localhost:3000/en) o [alemán](http://localhost:3000/de).
 
 ```bash
 npm run lint
