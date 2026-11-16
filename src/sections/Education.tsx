@@ -12,15 +12,10 @@ export function Education({
   content: PortfolioContent;
   items: readonly Entry[];
 }) {
-  const ordered = [...items].sort(
-    (a, b) =>
-      Number(b.id === "henry-ai-engineering") -
-      Number(a.id === "henry-ai-engineering"),
-  );
   return (
     <Section id="education" content={content.sections.education}>
       <div className="education-grid">
-        {ordered.map((item) => (
+        {items.map((item) => (
           <CertificationCard
             key={item.id}
             item={item}
