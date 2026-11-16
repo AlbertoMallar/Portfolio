@@ -1,6 +1,6 @@
 # Portfolio — Alberto Mallar
 
-Portfolio profesional de Software & AI Engineering, construido incrementalmente con Next.js App Router, React, TypeScript estricto y Tailwind CSS.
+Portfolio profesional de Software Developer | AI Engineering, construido incrementalmente con Next.js App Router, React, TypeScript estricto y Tailwind CSS.
 
 ## Estado: V1 visual
 
@@ -10,32 +10,37 @@ La home contiene, en orden:
 
 1. Navbar y selector de idioma.
 2. Hero con posicionamiento, foto, proyectos, CV disponible y enlaces profesionales.
-3. Featured Projects: ICASA y VIANSA.
-4. About.
-5. Experience: programación / Full Stack, Outlier y Henry; Property Management, LFI / El Alargue y BlowMax como experiencia complementaria compacta.
-6. Selected AI Work: M2, M3 y M4.
-7. Technologies: siete tecnologías principales y capacidades adicionales por categoría.
-8. Education & Certifications: seis entradas, priorizando Henry e incluyendo la certificación de inglés EF SET C1.
-9. Other Projects: Videogames App, Descuentos Ya y M1.
-10. Contact.
-11. Footer.
+3. Qué puedo aportar / What I can bring: Full Stack, AI Engineering, de la necesidad a producción, clientes y equipos.
+4. Trabajo profesional: ICASA y VIANSA.
+5. About: del problema a la solución.
+6. Experience: Freelance, ITC, Outlier y Henry; Property Management y LFI / El Alargue como experiencia complementaria compacta.
+7. Evidencia profesional: proyectos en producción, selección como reviewer en Outlier y evolución práctica en AI Engineering.
+8. Selected AI Work: M4, M3 y M2.
+9. Technologies: siete tecnologías principales y capacidades adicionales por categoría.
+10. Education & Certifications: AI Engineering, Full Stack, Ingeniería en Computación, Python, OutlierEDU e inglés.
+11. Other Projects: JobTracker, M1, Videogames App / PI y Descuentos Ya.
+12. Contact.
+13. Footer.
 
-PI sigue pendiente de identidad/repositorio y no tiene una ficha pública. Azure no está modelada y no se presenta como tecnología dominada. Los proyectos académicos existentes se conservan.
+Videogames App / PI se presenta como el primer proyecto Full Stack, desarrollado manualmente sin IA generativa; no se agrega una URL de repositorio sin confirmar. JobTracker es un proyecto personal en equipo de 2023, con repositorio privado y sin código generado por IA. Azure no está modelada y no se presenta como tecnología dominada.
 
 ## Correcciones de contenido de la V1
 
-La segunda revisión de contenido aplica las correcciones explícitas del autor del 2026-10-05. Tienen prioridad sobre el CV y las fichas internas anteriores; no deben revertirse usando esas fuentes históricas:
+La revisión de contenido del 2026-10-13 aplica los datos explícitos del autor, que tienen prioridad sobre el CV y las fichas internas anteriores:
 
-- Programador / Full Stack Developer: 2022–Actualidad, con alcance más amplio que el trabajo freelance iniciado en 2025.
+- Software Developer | Freelance: 2022–Actualidad, desde el relevamiento hasta producción; proyectos y colaboraciones con ICASA, VIANSA y Sensus3D.
+- Software Developer | ITC: abril–mayo de 2025, herramienta interna en PHP para el trabajo operativo de técnicos de campo.
 - Henry Teaching Assistant: 2023–2025, experiencia finalizada.
-- Outlier: diciembre de 2023–abril de 2025; incluye evaluación de prompts y respuestas, tool use y coordinación y revisión de trabajo durante 2024.
-- Property Management: 2019–Actualidad; LFI / El Alargue: 2015–2016; BlowMax: 2017–2018. Las tres entradas usan `Experience.secondary` para conservar la jerarquía tecnológica y el formato compacto existente.
+- Outlier: diciembre de 2023–abril de 2025; entrenamiento, evaluación y revisión de sistemas de IA; seleccionado como reviewer durante 2024 por su desempeño.
+- Property Management: octubre de 2019–Actualidad; LFI / El Alargue: julio de 2015–noviembre de 2016. Ambas entradas usan `Experience.secondary` para conservar el formato compacto existente. BlowMax queda fuera de la selección.
 - Curso de Python: 2022. La referencia interna a Sensus3D's Software Engineer se conserva en `references/professional-info/`; no se infiere que sea una institución emisora.
 - Ingeniería en Computación: cuatro años cursados, carrera no finalizada; no se presenta un título obtenido.
-- Medicina queda excluida del contenido del sitio. Su lugar en formación lo ocupa EF SET, certificación de inglés C1. No se infieren fecha de expedición, puntuación ni enlace desde notas pendientes de validación.
-- Technologies mantiene las siete tecnologías principales, agrega Agents y explicita Vision / Multimodal AI. Redux y FAISS permanecen como capacidades previamente documentadas.
+- Medicina queda excluida. Se diferencia el nivel profesional actual English — C2 Proficient del certificado EF SET — C1 Advanced. No se infieren una certificación C2, fecha de expedición, puntuación ni enlace.
+- Technologies mantiene las siete tecnologías principales y organiza las herramientas por contexto. AI Engineering reúne OpenAI APIs, LangChain, LangGraph, Langfuse, Pydantic, embeddings, RAG, agentes, sistemas multiagente, IA multimodal y structured outputs.
+- M4 usa LangChain con orquestación secuencial, OpenAI Vision/multimodal, Pydantic, Langfuse y structured outputs; no utiliza LangGraph. M3 sí utiliza LangGraph. El orden de presentación es M4 → M3 → M2.
+- Descuentos Ya se conserva como proyecto académico, sin enlace al deploy caído.
 
-Hero, metadatos y el encabezado «Algunos de mis trabajos» / «Some of my work» se actualizan en ambos idiomas. Los datos de M2/M3/M4, el diseño, los assets y el contenido original del CV descargable permanecen intactos.
+Hero, metadatos y narrativa se alinean con Software Developer | AI Engineering en español e inglés; la ruta alemana existente se mantiene compatible. Se reutilizan componentes, estilos y animaciones, con ajustes mínimos para las nuevas secciones. Las URLs e imágenes de ICASA y VIANSA y el contenido original del CV descargable se conservan.
 
 ## Separación de responsabilidades
 
@@ -87,7 +92,7 @@ Para previews de cards, preferir recortes de proporción 16:10, ancho aproximado
 - Grids fluidos: proyectos profesionales en dos columnas; AI en tres/dos/una; cards de educación en tres/dos/una.
 - Hero de dos columnas a una; fotografía con dimensiones reservadas y object-fit.
 - Menú móvil accesible con aria-expanded, cierre al navegar y Escape; único componente propio con estado de cliente.
-- Un h1, ocho h2, landmarks, skip link, foco visible, alt localizado e iconos decorativos fuera del árbol accesible.
+- Un h1, diez h2, landmarks, skip link, foco visible, alt localizado e iconos decorativos fuera del árbol accesible.
 - Detalles ampliables nativos para descripciones de proyectos y experiencia complementaria.
 - Sin dependencias nuevas de UI o motion; logos locales sin CDN en runtime, Server Components y CSS para hover/entrada.
 - `prefers-reduced-motion` desactiva animaciones, transiciones y scroll suave.
