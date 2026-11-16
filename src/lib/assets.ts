@@ -1,8 +1,8 @@
 import type { Locale } from "@/lib/locales";
 
 export const cvFiles: Partial<Record<Locale, `/cv/${string}.pdf`>> = {
-  es: "/cv/Alberto_Mallar_CV_ES_2026.pdf",
-  en: "/cv/Alberto_Mallar_CV_EN_2026.pdf",
+  es: "/cv/AlbertoMallarCV_ES.pdf",
+  en: "/cv/AlbertoMallarCV_EN.pdf",
 };
 
 // Solo las versiones en español e inglés están disponibles en public/cv.
