@@ -44,7 +44,8 @@ const en = {
     summary:
       "I work with companies and teams to turn real needs into software and applied AI solutions. I combine Full Stack Development, AI Engineering, and direct client experience to take problems from the initial need to a functional, deployed solution.",
     projectsLabel: "Explore projects",
-    cvLabel: "Download CV",
+    cvViewLabel: "View CV",
+    cvDownloadLabel: "Download CV",
     cvPending: "English CV pending",
     domains: ["Full Stack Development", "AI Engineering", "Idea → Production"],
   },

@@ -44,7 +44,8 @@ const es = {
     summary:
       "Trabajo con empresas y equipos para transformar necesidades reales en soluciones de software e IA aplicada. Combino desarrollo Full Stack, AI Engineering y experiencia directa con clientes para llevar problemas desde la necesidad inicial hasta una solución funcional y desplegada.",
     projectsLabel: "Explorar proyectos",
-    cvLabel: "Descargar CV",
+    cvViewLabel: "Ver CV",
+    cvDownloadLabel: "Descargar CV",
     cvPending: "CV en español pendiente",
     domains: ["Full Stack Development", "AI Engineering", "Idea → Producción"],
   },

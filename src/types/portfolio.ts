@@ -62,7 +62,8 @@ export interface PortfolioContent {
     title: string;
     summary: string;
     projectsLabel: string;
-    cvLabel: string;
+    cvViewLabel: string;
+    cvDownloadLabel: string;
     cvPending: string;
     domains: readonly string[];
   };

@@ -40,10 +40,21 @@ export function Hero({
             <Icon name="arrow" />
           </a>
           {cvHref ? (
-            <a href={cvHref} download className="button button-secondary">
-              <Icon name="download" />
-              {content.cvLabel}
-            </a>
+            <>
+              <a
+                href={cvHref}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="button button-secondary"
+              >
+                <Icon name="external" />
+                {content.cvViewLabel}
+              </a>
+              <a href={cvHref} download className="button button-secondary">
+                <Icon name="download" />
+                {content.cvDownloadLabel}
+              </a>
+            </>
           ) : (
             <span className="cv-pending">
               <Icon name="download" />

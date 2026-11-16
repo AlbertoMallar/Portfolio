@@ -44,7 +44,8 @@ const de = {
     summary:
       "Ich arbeite mit Unternehmen und Teams daran, konkrete Anforderungen in Softwarelösungen und angewandte KI umzusetzen. Dabei verbinde ich Full-Stack-Entwicklung, AI Engineering und direkte Kundenerfahrung, um von der ersten Anforderung zu einer funktionsfähigen, bereitgestellten Lösung zu gelangen.",
     projectsLabel: "Projekte entdecken",
-    cvLabel: "Lebenslauf herunterladen",
+    cvViewLabel: "Lebenslauf ansehen",
+    cvDownloadLabel: "Lebenslauf herunterladen",
     cvPending: "Deutscher Lebenslauf folgt",
     domains: ["Full Stack Development", "AI Engineering", "Idee → Produktion"],
   },
