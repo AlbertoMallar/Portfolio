@@ -2,9 +2,9 @@ import type { PortfolioContent } from "@/types/portfolio";
 
 const de = {
   metadata: {
-    title: "Software & AI Engineering",
+    title: "Software Developer | AI Engineering",
     description:
-      "Portfolio von Alberto Mallar. Software & AI Engineering: Technologielösungen, Softwaremodernisierung und KI-Integration für Unternehmen und Teams.",
+      "Portfolio von Alberto Mallar. Software Developer | AI Engineering: Full-Stack-Entwicklung und angewandte KI für Unternehmen und Kunden, vom Bedarf bis zur Produktion.",
   },
   common: {
     skipToContent: "Zum Hauptinhalt springen",
@@ -16,7 +16,7 @@ const de = {
     },
     pendingContent: "Inhalt folgt.",
     presentLabel: "Heute",
-    hoursLabel: "Ausbildungsstunden",
+    hoursLabel: "Ausbildungsstunden (ca.)",
     contextLabels: {
       professional: "Beruflich",
       academic: "Ausbildung",
@@ -40,49 +40,57 @@ const de = {
     contact: "Kontakt",
   },
   hero: {
-    title: "Software & AI Engineering",
+    title: "Software Developer | AI Engineering",
     summary:
-      "Ich arbeite mit Unternehmen und Teams daran, konkrete Anforderungen in Technologielösungen umzusetzen, Software zu modernisieren und KI dort einzusetzen, wo sie einen Mehrwert bietet. Dabei verbinde ich technisches Urteilsvermögen mit klarer Kommunikation, Zusammenarbeit, Teamkoordination, agilen Methoden und direkter Kundenerfahrung – auf Spanisch und Englisch.",
+      "Ich arbeite mit Unternehmen und Teams daran, konkrete Anforderungen in Softwarelösungen und angewandte KI umzusetzen. Dabei verbinde ich Full-Stack-Entwicklung, AI Engineering und direkte Kundenerfahrung, um von der ersten Anforderung zu einer funktionsfähigen, bereitgestellten Lösung zu gelangen.",
     projectsLabel: "Projekte entdecken",
     cvLabel: "Lebenslauf herunterladen",
     cvPending: "Deutscher Lebenslauf folgt",
-    domains: ["Full Stack", "AI Engineering", "Idee → Produktion"],
+    domains: ["Full Stack Development", "AI Engineering", "Idee → Produktion"],
   },
   sections: {
+    capabilities: {
+      eyebrow: "01 / LÖSUNGEN",
+      title: "Was ich beitragen kann",
+    },
     projects: {
-      eyebrow: "01 / AUSGEWÄHLTE ARBEITEN",
+      eyebrow: "02 / BERUFLICHE PROJEKTE",
       title: "Einige meiner Arbeiten",
-      body: "Abgeschlossene berufliche Projekte für Kunden – vom Verständnis ihrer Anforderungen bis zur fertigen Lösung.",
+      body: "Lösungen für Unternehmen und Kunden – vom Verständnis des Bedarfs über die Implementierung bis zur Inbetriebnahme.",
     },
     about: {
-      eyebrow: "02 / ÜBER MICH",
-      title: "Vom Problem zum Produkt.",
-      body: "Ich arbeite mit React, Next.js, TypeScript, Node.js und PostgreSQL, um Benutzeroberflächen zu entwickeln, Anwendungslogik umzusetzen und Dienste zu integrieren. In meinen freiberuflichen Projekten übernehme ich die Implementierung, Integrationen, das Deployment, die Domainkonfiguration und die Inbetriebnahme.\n\nMeine Ausbildung und Projekte im Bereich AI Engineering umfassen Embeddings, Retrieval und RAG, Agenten mit Werkzeugzugriff, Multi-Agenten-Workflows, strukturierte Ausgaben sowie Bild- und Audiointegrationen über KI-APIs. Außerdem habe ich an der Bewertung und dem Training von Modellen, an Code-Reviews und an der Betreuung von Studierenden der Full-Stack-Entwicklung gearbeitet.",
+      eyebrow: "03 / ÜBER MICH",
+      title: "Vom Problem zur Lösung",
+      body: "Seit 2022 arbeite ich in der Softwareentwicklung an Technologieprojekten und Kooperationen für Unternehmen wie ICASA, VIANSA, ITC und Sensus3D. Meine Erfahrung umfasst Full-Stack-Entwicklung mit TypeScript, JavaScript, Python, Next.js, React, Node.js und PostgreSQL sowie Integrationen, Deployment und Inbetriebnahme.\n\nMein Profil entwickelte sich auf natürliche Weise in Richtung AI Engineering. Embeddings, RAG, Agenten, LangChain, LangGraph, strukturierte Ausgaben, Langfuse und multimodale Modelle erweitern die Probleme, die ich lösen kann. Bei Outlier arbeitete ich am Training und an der Bewertung von KI-Systemen und wurde später als Reviewer ausgewählt.\n\nÜber die technische Umsetzung hinaus habe ich Erfahrung im direkten Kundenkontakt, in der Koordination von Menschen und in der Problemlösung. Mein Ziel ist es, den tatsächlichen Bedarf hinter einer Anforderung zu verstehen und eine technologische Lösung zu finden, die für ihre Nutzer sinnvoll ist.",
     },
     experience: {
-      eyebrow: "03 / ERFAHRUNG",
+      eyebrow: "04 / ERFAHRUNG",
       title: "Erfahrung, die Disziplinen verbindet.",
     },
+    evidence: {
+      eyebrow: "05 / NACHWEISE",
+      title: "Berufliche Nachweise",
+    },
     "ai-work": {
-      eyebrow: "04 / AI ENGINEERING",
-      title: "Von Retrieval zu Agenten.",
-      body: "Ausbildungsprojekte bei Henry: RAG mit Quellenbelegen, Multi-Agenten-Orchestrierung und multimodale Analyse.",
+      eyebrow: "06 / AI ENGINEERING",
+      title: "Angewandte KI: von RAG zu agentischen und multimodalen Systemen",
+      body: "AI-Engineering-Projekte mit Schwerpunkt auf Wissensabruf, Agentenorchestrierung und multimodaler Verarbeitung, entwickelt als praktische Weiterentwicklung von Komplexität und Fähigkeiten.",
     },
     skills: {
-      eyebrow: "05 / TECHNOLOGIEN",
+      eyebrow: "07 / TECHNOLOGIEN",
       title: "Der Stack hinter meiner Arbeit.",
     },
     education: {
-      eyebrow: "06 / AUSBILDUNG",
+      eyebrow: "08 / AUSBILDUNG",
       title: "Ausbildung und kontinuierliches Lernen.",
     },
     "other-projects": {
-      eyebrow: "07 / WEITERE PROJEKTE",
+      eyebrow: "09 / WEITERE PROJEKTE",
       title: "Grundlagen in der Praxis.",
-      body: "Ausbildungs- und Lernprojekte, die die ausgewählten Arbeiten ergänzen.",
+      body: "Private Teamprojekte und Ausbildungsprojekte, die meine Erfahrung in Full-Stack-Entwicklung und AI Engineering ergänzen.",
     },
     contact: {
-      eyebrow: "08 / KONTAKT",
+      eyebrow: "10 / KONTAKT",
       title: "Lassen Sie uns etwas Nützliches entwickeln.",
       body: "Kontaktieren Sie mich per E-Mail oder erfahren Sie auf GitHub und LinkedIn mehr über meine Arbeit und meinen beruflichen Werdegang.",
     },
@@ -102,20 +110,38 @@ const de = {
     certification: "Zertifizierung",
     emailLabel: "E-Mail schreiben",
     contactTitle: "Haben Sie ein Projekt im Sinn?",
-    footer: "Software & AI Engineering",
+    footer: "Software Developer | AI Engineering",
     backToTop: "Zurück nach oben",
+    professionalEvidence: [
+      {
+        title: "Projekte in Produktion",
+        body: "ICASA und VIANSA: Lösungen, die für echte Kunden entwickelt und bereitgestellt wurden.",
+      },
+      {
+        title: "Als Reviewer bei Outlier ausgewählt",
+        body: "Technische Prüfung und Qualitätskontrolle der Arbeit anderer Contributors.",
+      },
+      {
+        title: "Praktische Entwicklung im AI Engineering",
+        body: "RAG → Multi-Agenten-Systeme → multimodale KI.",
+      },
+    ],
     aboutCapabilities: [
       {
-        title: "Entwickeln und bereitstellen",
-        body: "Benutzeroberflächen, Anwendungslogik, Integrationen und Webprodukte im Produktivbetrieb.",
+        title: "Full-Stack-Entwicklung",
+        body: "Webanwendungen und Lösungen mit Frontend, Backend, Geschäftslogik, APIs und Datenbanken.",
       },
       {
-        title: "KI integrieren",
-        body: "RAG, Agenten und multimodale Workflows mit KI-APIs.",
+        title: "AI Engineering",
+        body: "RAG, Embeddings, Agenten, strukturierte Ausgaben und multimodale Workflows, integriert in Produkte und Prozesse.",
       },
       {
-        title: "Prüfen und bewerten",
-        body: "Code und Modellantworten; freiberufliche Erfahrung bei Outlier.",
+        title: "Vom Bedarf zur Produktion",
+        body: "Anforderungsanalyse, Implementierung, Integrationen, Deployment, Domainkonfiguration und Anpassungen im Produktivbetrieb.",
+      },
+      {
+        title: "Kunden und Teams",
+        body: "Verständnis von Anforderungen, technische Kommunikation, Koordination und Übersetzung konkreter Bedürfnisse in konkrete Lösungen.",
       },
     ],
   },

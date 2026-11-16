@@ -1,4 +1,3 @@
-import { Icon } from "@/components/ui/Icon";
 import type { PortfolioContent } from "@/types/portfolio";
 
 export function About({ content }: { content: PortfolioContent }) {
@@ -22,17 +21,6 @@ export function About({ content }: { content: PortfolioContent }) {
             <p key={paragraph}>{paragraph}</p>
           ))}
         </div>
-      </div>
-      <div className="capability-grid">
-        {content.ui.aboutCapabilities.map((capability, index) => (
-          <div key={capability.title}>
-            <Icon
-              name={index === 0 ? "layers" : index === 1 ? "brain" : "code"}
-            />
-            <h3>{capability.title}</h3>
-            <p>{capability.body}</p>
-          </div>
-        ))}
       </div>
     </section>
   );

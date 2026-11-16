@@ -17,7 +17,7 @@ export function Hero({
   common: PortfolioContent["common"];
   cvHref?: string;
 }) {
-  const [software, intelligence] = content.title.split(" & ");
+  const [software, intelligence] = content.title.split(" | ");
   return (
     <section className="hero" aria-labelledby="hero-title">
       <div className="hero-copy">
@@ -26,7 +26,7 @@ export function Hero({
           {profile.name}
         </p>
         <h1 id="hero-title">
-          {software} &amp;
+          {software} |
           <br />
           <span>
             {intelligence}

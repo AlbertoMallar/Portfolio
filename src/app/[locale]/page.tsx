@@ -12,6 +12,7 @@ import { Contact } from "@/sections/Contact";
 import { Education } from "@/sections/Education";
 import { Experience } from "@/sections/Experience";
 import { Hero } from "@/sections/Hero";
+import { Highlights } from "@/sections/Highlights";
 import { Projects } from "@/sections/Projects";
 import { Skills } from "@/sections/Skills";
 
@@ -30,6 +31,12 @@ export default async function PortfolioPage({
         common={content.common}
         cvHref={getCvHref(locale)}
       />
+      <Highlights
+        id="capabilities"
+        content={content}
+        items={content.ui.aboutCapabilities}
+        icons={["layers", "brain", "code", "mail"]}
+      />
       <Projects
         locale={locale}
         content={content}
@@ -39,6 +46,12 @@ export default async function PortfolioPage({
       />
       <About content={content} />
       <Experience locale={locale} content={content} items={experience} />
+      <Highlights
+        id="evidence"
+        content={content}
+        items={content.ui.professionalEvidence}
+        icons={["monitor", "code", "brain"]}
+      />
       <Projects
         id="ai-work"
         locale={locale}

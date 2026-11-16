@@ -2,9 +2,9 @@ import type { PortfolioContent } from "@/types/portfolio";
 
 const es = {
   metadata: {
-    title: "Software & AI Engineering",
+    title: "Software Developer | AI Engineering",
     description:
-      "Portfolio de Alberto Mallar. Software & AI Engineering: soluciones tecnológicas, modernización de software e integración de IA para empresas y equipos.",
+      "Portfolio de Alberto Mallar. Software Developer | AI Engineering: desarrollo Full Stack e IA aplicada para empresas y clientes, desde la necesidad hasta producción.",
   },
   common: {
     skipToContent: "Saltar al contenido principal",
@@ -16,7 +16,7 @@ const es = {
     },
     pendingContent: "Contenido pendiente de definir.",
     presentLabel: "Actualidad",
-    hoursLabel: "horas de formación",
+    hoursLabel: "horas de formación (aprox.)",
     contextLabels: {
       professional: "Profesional",
       academic: "Académico",
@@ -40,49 +40,57 @@ const es = {
     contact: "Contacto",
   },
   hero: {
-    title: "Software & AI Engineering",
+    title: "Software Developer | AI Engineering",
     summary:
-      "Trabajo con empresas y equipos para transformar necesidades reales en soluciones tecnológicas, modernizando software e incorporando IA cuando aporta valor. Combino criterio técnico con comunicación clara, trabajo colaborativo, coordinación de equipos, metodologías ágiles y experiencia directa con clientes, tanto en español como en inglés.",
+      "Trabajo con empresas y equipos para transformar necesidades reales en soluciones de software e IA aplicada. Combino desarrollo Full Stack, AI Engineering y experiencia directa con clientes para llevar problemas desde la necesidad inicial hasta una solución funcional y desplegada.",
     projectsLabel: "Explorar proyectos",
     cvLabel: "Descargar CV",
     cvPending: "CV en español pendiente",
-    domains: ["Full Stack", "AI Engineering", "Idea → producción"],
+    domains: ["Full Stack Development", "AI Engineering", "Idea → Producción"],
   },
   sections: {
+    capabilities: {
+      eyebrow: "01 / SOLUCIONES",
+      title: "Qué puedo aportar",
+    },
     projects: {
-      eyebrow: "01 / TRABAJO SELECCIONADO",
+      eyebrow: "02 / TRABAJO PROFESIONAL",
       title: "Algunos de mis trabajos",
-      body: "Trabajos profesionales desarrollados y finalizados para clientes, desde sus necesidades hasta la solución entregada.",
+      body: "Soluciones desarrolladas para empresas y clientes, desde la comprensión de la necesidad hasta la implementación y puesta en producción.",
     },
     about: {
-      eyebrow: "02 / SOBRE MÍ",
-      title: "Del problema al producto.",
-      body: "Trabajo con React, Next.js, TypeScript, Node.js y PostgreSQL para desarrollar interfaces, lógica de aplicación e integrar servicios. En proyectos freelance me encargo de la implementación, las integraciones, el deploy, la configuración de dominios y la puesta en producción.\n\nMi formación y mis proyectos de AI Engineering incluyen embeddings, retrieval y RAG, agentes con herramientas, flujos multiagente, salidas estructuradas e integraciones de visión y audio con APIs de IA. También trabajé en evaluación y entrenamiento de modelos, revisión de código y acompañamiento de estudiantes de desarrollo Full Stack.",
+      eyebrow: "03 / SOBRE MÍ",
+      title: "Del problema a la solución",
+      body: "Desde 2022 trabajo en desarrollo de software, participando en proyectos y colaboraciones tecnológicas para empresas como ICASA, VIANSA, ITC y Sensus3D. Mi experiencia abarca desarrollo Full Stack con TypeScript, JavaScript, Python, Next.js, React, Node.js y PostgreSQL, además de integraciones, deployment y puesta en producción.\n\nMi perfil evolucionó naturalmente hacia AI Engineering, ampliando el tipo de problemas que puedo resolver mediante embeddings, RAG, agentes, LangChain, LangGraph, structured outputs, Langfuse y modelos multimodales. También trabajé en entrenamiento y evaluación de sistemas de IA en Outlier, donde posteriormente fui seleccionado como reviewer.\n\nAdemás del trabajo técnico, tengo experiencia directa con clientes, coordinación de personas y resolución de problemas. Mi objetivo es entender la necesidad detrás de un requerimiento y encontrar una solución tecnológica que tenga sentido para quien la va a utilizar.",
     },
     experience: {
-      eyebrow: "03 / TRAYECTORIA",
+      eyebrow: "04 / TRAYECTORIA",
       title: "Experiencia que conecta disciplinas.",
     },
+    evidence: {
+      eyebrow: "05 / EVIDENCIA",
+      title: "Evidencia profesional",
+    },
     "ai-work": {
-      eyebrow: "04 / AI ENGINEERING",
-      title: "De la recuperación a los agentes.",
-      body: "Proyectos académicos de Henry: RAG con evidencia, orquestación multiagente y análisis multimodal.",
+      eyebrow: "06 / AI ENGINEERING",
+      title: "IA aplicada: de RAG a sistemas agentic y multimodales",
+      body: "Proyectos de AI Engineering enfocados en recuperación de conocimiento, orquestación de agentes y procesamiento multimodal, desarrollados como una progresión práctica de complejidad y capacidades.",
     },
     skills: {
-      eyebrow: "05 / TECNOLOGÍAS",
+      eyebrow: "07 / TECNOLOGÍAS",
       title: "El stack detrás del trabajo.",
     },
     education: {
-      eyebrow: "06 / FORMACIÓN",
+      eyebrow: "08 / FORMACIÓN",
       title: "Formación y aprendizaje continuo.",
     },
     "other-projects": {
-      eyebrow: "07 / OTROS PROYECTOS",
+      eyebrow: "09 / OTROS PROYECTOS",
       title: "Fundamentos puestos en práctica.",
-      body: "Proyectos académicos y de aprendizaje que complementan el trabajo seleccionado.",
+      body: "Proyectos personales en equipo y académicos que complementan mi experiencia en Full Stack y AI Engineering.",
     },
     contact: {
-      eyebrow: "08 / CONTACTO",
+      eyebrow: "10 / CONTACTO",
       title: "Construyamos algo útil.",
       body: "Podés contactarme por email o conocer más sobre mi trabajo y trayectoria en GitHub y LinkedIn.",
     },
@@ -102,20 +110,38 @@ const es = {
     certification: "Certificación",
     emailLabel: "Escribime",
     contactTitle: "¿Tenés un proyecto en mente?",
-    footer: "Software & AI Engineering",
+    footer: "Software Developer | AI Engineering",
     backToTop: "Volver al inicio",
+    professionalEvidence: [
+      {
+        title: "Proyectos llevados a producción",
+        body: "ICASA y VIANSA: soluciones desarrolladas y desplegadas para clientes reales.",
+      },
+      {
+        title: "Seleccionado como reviewer en Outlier",
+        body: "Revisión técnica y control de calidad del trabajo realizado por otros contributors.",
+      },
+      {
+        title: "Evolución práctica en AI Engineering",
+        body: "RAG → sistemas multiagente → IA multimodal.",
+      },
+    ],
     aboutCapabilities: [
       {
-        title: "Desarrollar y desplegar",
-        body: "Interfaces, lógica, integraciones y productos web en producción.",
+        title: "Desarrollo Full Stack",
+        body: "Aplicaciones y soluciones web con frontend, backend, lógica de negocio, APIs y bases de datos.",
       },
       {
-        title: "Integrar inteligencia",
-        body: "RAG, agentes y flujos multimodales con APIs de IA.",
+        title: "AI Engineering",
+        body: "RAG, embeddings, agentes, structured outputs y workflows multimodales integrados a productos y procesos.",
       },
       {
-        title: "Revisar y evaluar",
-        body: "Código y respuestas de modelos; experiencia freelance en Outlier.",
+        title: "De la necesidad a producción",
+        body: "Relevamiento, implementación, integraciones, deployment, configuración de dominios y ajustes en producción.",
+      },
+      {
+        title: "Clientes y equipos",
+        body: "Comprensión de requerimientos, comunicación técnica, coordinación y traducción de necesidades reales a soluciones concretas.",
       },
     ],
   },
