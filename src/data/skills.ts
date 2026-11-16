@@ -1,6 +1,6 @@
 import type { SkillGroup } from "@/types/portfolio";
 
-// Tecnologías principales confirmadas en el perfil y la solicitud visual.
+// Tecnologías principales del perfil profesional.
 export const coreTechnologies = [
   "TypeScript",
   "JavaScript",
@@ -15,7 +15,7 @@ export const skills: readonly SkillGroup[] = [
   {
     id: "frontend",
     title: { es: "Frontend", en: "Frontend", de: "Frontend" },
-    items: ["Tailwind CSS", "HTML", "CSS", "Redux"],
+    items: ["Tailwind CSS", "HTML", "CSS", "Redux", "Redux Toolkit"],
   },
   {
     id: "backend",
@@ -32,7 +32,7 @@ export const skills: readonly SkillGroup[] = [
   {
     id: "databases",
     title: { es: "Datos", en: "Data", de: "Daten" },
-    items: ["Prisma", "Sequelize", "FAISS"],
+    items: ["Prisma", "Sequelize", "Chroma", "FAISS"],
   },
   {
     id: "ai-engineering",
@@ -46,14 +46,13 @@ export const skills: readonly SkillGroup[] = [
       "Embeddings",
       "RAG",
       {
-        id: "tool-use",
+        id: "agents",
         label: {
-          es: "Uso de herramientas",
-          en: "Tool Use",
-          de: "Werkzeugnutzung",
+          es: "Agentes de IA",
+          en: "AI Agents",
+          de: "KI-Agenten",
         },
       },
-      { id: "agents", label: { es: "Agentes", en: "Agents", de: "Agenten" } },
       {
         id: "multi-agent",
         label: {
@@ -65,9 +64,9 @@ export const skills: readonly SkillGroup[] = [
       {
         id: "multimodal",
         label: {
-          es: "Visión / IA multimodal",
-          en: "Vision / Multimodal AI",
-          de: "Bildverarbeitung / Multimodale KI",
+          es: "IA multimodal",
+          en: "Multimodal AI",
+          de: "Multimodale KI",
         },
       },
       {

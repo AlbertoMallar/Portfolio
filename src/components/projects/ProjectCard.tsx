@@ -33,7 +33,11 @@ export function ProjectCard({
       <div className="project-content">
         <div className="project-meta">
           <span>
-            {project.context === "professional" ? ui.production : ui.academic}
+            {project.context === "professional"
+              ? ui.production
+              : project.context === "personal"
+                ? common.contextLabels.personal
+                : ui.academic}
           </span>
           <Period
             period={project}

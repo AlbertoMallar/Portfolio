@@ -14,8 +14,10 @@ export interface Profile {
 }
 
 export type SectionId =
+  | "capabilities"
   | "about"
   | "experience"
+  | "evidence"
   | "projects"
   | "ai-work"
   | "skills"
@@ -83,6 +85,7 @@ export interface PortfolioContent {
     footer: string;
     backToTop: string;
     aboutCapabilities: readonly { title: string; body: string }[];
+    professionalEvidence: readonly { title: string; body: string }[];
   };
 }
 
